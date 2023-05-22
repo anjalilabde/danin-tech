@@ -1,5 +1,5 @@
 <!Doctype html>
-<html>
+<html dir="ltr">
 
 <head>
   <meta charset="UTF-8">
@@ -12,42 +12,62 @@
 </head>
 
 <body class="bg-blue-dark">
-  <nav class="flex items-center justify-between px-20 py-4">
-    <div class="logo invisible md:visible ">
-      <a href="#"><img src="/public/images/logo-e.png" alt="" class="max-h-14"></a>
+  <header class="items-center justify-between lg:px-20 py-8 lg:pt-10 pb-4 px-4 mx-auto ">
+    <div class="logo ltr:block rtl:hidden">
+      <a href="#"><img src="/public/images/danin-logo-e.png" alt=""
+          class="absolute translate-x-20 lg:translate-x-0 -translate-y-5 lg:translate-y-2 max-h-14">
+      </a>
     </div>
-    <div>
-      <ul class="hidden md:visible md:flex bg-white-white/10 rounded-full p-1">
-        <li
-          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
-          <a href="#">OUR CONFRENCES</a>
+    <div class="logo ltr:hidden rtl:block">
+      <a href="#"><img src="/public/images/danin-logo-e.png" alt=""
+          class="absolute translate-x-20 lg:translate-x-0 -translate-y-5 lg:translate-y-2 max-h-14">
+      </a>
+    </div>
+    <div class="relative flex justify-center">
+      <ul class=" hidden lg:inline-flex bg-white-white/20 rounded-full py-4 px-1">
+        <div></div>
+        <li class="">
+          <a href="#"
+            class="text-base text-white-white hover:bg-white-white py-4 px-4 hover:text-base hover:text-blue-primary hover:rounded-full">OUR
+            CONFRENCES</a>
         </li>
-        <li
-          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
-          <a href="#">SALARY SURVEYS</a>
+        <li class="">
+          <a href="#"
+            class="text-base text-white-white hover:bg-white-white py-4 px-4 hover:text-base hover:text-blue-primary hover:rounded-full">SALARY
+            SURVEYS</a>
         </li>
-        <li
-          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
-          <a href="#">ABOUT</a>
+        <li class="">
+          <a href="#"
+            class="text-base text-white-white hover:bg-white-white py-4 px-4 hover:text-base hover:text-blue-primary hover:rounded-full">ABOUT</a>
         </li>
-        <li
-          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
-          <a href="#">CONTACT</a>
+        <li class="">
+          <a href="#"
+            class="text-base text-white-white hover:bg-white-white py-4 px-4 hover:text-base hover:text-blue-primary hover:rounded-full">CONTACT</a>
         </li>
-        <li
-          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
-          <a href="#">HEBREW</a>
+        <li class="">
+          <a href="#"
+            class="text-base text-white-white hover:bg-white-white py-4 px-4 hover:text-base hover:text-blue-primary hover:rounded-full">HEBREW</a>
         </li>
       </ul>
-      <div class="logo visible md:hidden ">
-        <a href="#"><img src="/public/images/logo-e.png" alt="" class="max-h-14"></a>
-      </div>
     </div>
-    <button id="hamburger-button"
-      class="visible md:invisible text-3xl text-white-white cursor-pointer relative border-solid border-spacing-1 border-blue-primary border-2 px-2 text-center">
-      &#9776;
-    </button>
-  </nav>
+    <div class="flex justify-end">
+      <button id="hamburger-button"
+        class="block lg:hidden text-3xl text-white-white cursor-pointer relative px-2 text-center">
+        <!-- &#9776; -->
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_902_816)">
+            <path d="M0 13.1863H16V10.6863H0L0 13.1863Z" fill="white" />
+            <path d="M0 5.5L16 5.5V3L0 3L0 5.5Z" fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_902_816">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
+    </div>
+  </header>
 </body>
 
 </html>

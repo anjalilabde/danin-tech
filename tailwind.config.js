@@ -13,9 +13,7 @@ module.exports = {
         },
         white: {
           "white": "#D6D6E3",
-          opacity: {
-            "white-15": ".15",
-          },
+
         },
 
       },
