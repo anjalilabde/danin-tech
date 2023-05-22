@@ -1,0 +1,28 @@
+@font-face{
+    font-family: 'aran';
+    font-weight: 400; /*(regular)*/
+    font-style: normal;
+    src: url('osaran400-web.woff2') format('woff2'),
+    url('osaran400-web.woff') format('woff');
+}
+@font-face{
+    font-family: 'aran';
+    font-weight: 500; /*semibold*/
+    font-style: normal;
+    src: url('osaran500-web.woff2') format('woff2'),
+    url('osaran500-web.woff') format('woff');
+}
+@font-face{
+    font-family: 'aran';
+    font-weight: 600; /*semibold*/
+    font-style: normal;
+    src: url('osaran600-web.woff2') format('woff2'),
+    url('osaran600-web.woff') format('woff');
+}
+@font-face{
+    font-family: 'aran';
+    font-weight: 700; /*(bold)*/
+    font-style: normal;
+    src: url('osaran700-web.woff2') format('woff2'),
+    url('osaran700-web.woff') format('woff');
+}
