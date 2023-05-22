@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html>
 
 <head>
@@ -11,10 +11,43 @@
   <title>Danin Technologies</title>
 </head>
 
-<body>
-  <h1 class="text-3xl font-bold1 underline">
-    Hello world again again!
-  </h1>
+<body class="bg-blue-dark">
+  <nav class="flex items-center justify-between px-20 py-4">
+    <div class="logo invisible md:visible ">
+      <a href="#"><img src="/public/images/logo-e.png" alt="" class="max-h-14"></a>
+    </div>
+    <div>
+      <ul class="hidden md:visible md:flex bg-white-white/10 rounded-full p-1">
+        <li
+          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
+          <a href="#">OUR CONFRENCES</a>
+        </li>
+        <li
+          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
+          <a href="#">SALARY SURVEYS</a>
+        </li>
+        <li
+          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
+          <a href="#">ABOUT</a>
+        </li>
+        <li
+          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
+          <a href="#">CONTACT</a>
+        </li>
+        <li
+          class="text-base text-white-white hover:bg-white-white py-2 px-5 hover:text-base hover:text-blue-primary hover:rounded-full">
+          <a href="#">HEBREW</a>
+        </li>
+      </ul>
+      <div class="logo visible md:hidden ">
+        <a href="#"><img src="/public/images/logo-e.png" alt="" class="max-h-14"></a>
+      </div>
+    </div>
+    <button id="hamburger-button"
+      class="visible md:invisible text-3xl text-white-white cursor-pointer relative border-solid border-spacing-1 border-blue-primary border-2 px-2 text-center">
+      &#9776;
+    </button>
+  </nav>
 </body>
 
 </html>

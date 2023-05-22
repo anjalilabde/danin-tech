@@ -5,8 +5,29 @@ module.exports = {
     extend: {
       fontFamily: {
         'anomalia': ['anomalia'],
-      }
+      },
+      colors: {
+        blue: {
+          "dark": "#181B31",
+          "primary": "#102250",
+        },
+        white: {
+          "white": "#D6D6E3",
+          opacity: {
+            "white-15": ".15",
+          },
+        },
+
+      },
+    },
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        DEFAULT: '1380px'
+      },
     },
   },
   plugins: [],
+
 }
