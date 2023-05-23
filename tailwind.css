@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body{
-    @apply font-anomalia;
+    @apply font-anomalia bg-blue-900;
 }

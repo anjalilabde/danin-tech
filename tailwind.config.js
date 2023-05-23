@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+ /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
@@ -10,12 +10,8 @@ module.exports = {
         blue: {
           "dark": "#181B31",
           "primary": "#102250",
+          900: "#010C27",
         },
-        white: {
-          "white": "#D6D6E3",
-
-        },
-
       },
     },
     container: {
