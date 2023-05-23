@@ -652,10 +652,6 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -787,16 +783,16 @@ body {
   color: rgb(16 34 80 / var(--tw-text-opacity));
 }
 
-:is([dir="ltr"] .ltr\:right-\[100px\]) {
-  right: 100px;
+:is([dir="ltr"] .ltr\:left-\[100px\]) {
+  left: 100px;
 }
 
 :is([dir="ltr"] .ltr\:left-auto) {
   left: auto;
 }
 
-:is([dir="ltr"] .ltr\:left-\[100px\]) {
-  left: 100px;
+:is([dir="ltr"] .ltr\:right-\[100px\]) {
+  right: 100px;
 }
 
 :is([dir="ltr"] .ltr\:block) {
