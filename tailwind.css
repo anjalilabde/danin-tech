@@ -5,3 +5,35 @@
 body{
     @apply font-anomalia bg-blue-900;
 }
+.content:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background: linear-gradient(288.5deg, #003FFF -9.14%, #000F3A 20.33%, #000F3A 58.76%, #001B6C 95.28%, #003FFF 113.86%), #102250;
+    mix-blend-mode: hard-light;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    border-radius: 0.75rem;
+}
+.gr-blue-text{
+    background: linear-gradient(360deg, #001B6C 10%, #003FFF 25%, #BE7BFA 65.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+@-webkit-keyframes cube {
+    50% {
+        transform: translateY(1rem)
+    }
+}
+
+@keyframes cube {
+    50% {
+        transform: translateY(1rem)
+    }
+}
+.animate-vector {
+    -webkit-animation: cube 6s ease-in-out infinite !important;
+    animation: cube 4s ease-in-out infinite !important;
+}
