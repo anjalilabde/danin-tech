@@ -1,5 +1,6 @@
 <!Doctype html>
 <html dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +23,11 @@
         <div>
           <a href="#" class="absolute lg:static left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <!-- eng logo -->
-            <img src="./images/danin-logo-e.png" alt="Danmin logo" class="ltr:block rtl:hidden max-h-14 xl:max-h-[77px]">
+            <img src="./images/danin-logo-e.png" alt="Danmin logo"
+              class="ltr:block rtl:hidden max-h-14 xl:max-h-[77px]">
             <!-- Hebrew logo -->
-            <img src="./images/danin-logo-h.png" alt="Danmin logo" class="ltr:hidden rtl:block max-h-14 xl:max-h-[77px]">
+            <img src="./images/danin-logo-h.png" alt="Danmin logo"
+              class="ltr:hidden rtl:block max-h-14 xl:max-h-[77px]">
           </a>
         </div>
 
@@ -57,60 +60,86 @@
       </div>
     </div>
   </header>
-
-  <section>
-    <!-- Right top video -->
-    <div class="absolute left-[100px] -top-4 z-[-1] ltr:left-auto ltr:right-[100px] rtl:left-[100px] animate-vector">
-      <div class="content w-[372px] h-[277px] relative z-[-1]">
+  <!-- Hero section -->
+  <section class="pb-[60px] lg:pb-[140px] overflow-x-hidden">
+    <!-- Desktop Right top video -->
+    <div class="hidden lg:block absolute -top-4 z-[-1] ltr:left-auto ltr:right-0 rtl:left-0 ltr:md:left-auto ltr:md:right-5 rtl:md:left-5 ltr:2xl:right-[100px] rtl:2xl:left-[100px] animate-vector">
+      <div class="content w-[180px] h-[135px] lg:w-[260px] lg:h-[193px] 2xl:w-[372px] 2xl:h-[277px] relative z-[-1]">
         <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid3.mp4" autoplay loop muted></video>
       </div>
     </div>
 
-    <div class="relative min-h-[1000px]">
+    <div class="relative min-h-[600px] 2xl:min-h-[1000px]">
+       <!-- Mobile Right top video -->
+    <div class="block lg:hidden absolute top-0 z-[-1] ltr:left-auto ltr:-right-4 rtl:left-4 animate-vector">
+      <div class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px] lg:w-[260px] lg:h-[193px] 2xl:w-[372px] 2xl:h-[277px] relative z-[-1]">
+        <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid3.mp4" autoplay loop muted></video>
+      </div>
+    </div>
+
       <!-- Left top video -->
-      <div class="absolute ltr:left-[100px] rtl:right-[100px] top-0 animate-vector z-[-1]">
-        <div class="content w-[409px] h-[219px] relative z-[-1]">
+      <div class="absolute top-6 rtl:left-auto ltr:-left-4  ltr:2xl:left-[100px] rtl:2xl:right-[100px] lg:top-0 animate-vector z-[-1]">
+        <div class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px]  lg:w-[286px] 2xl:w-[409px] lg:h-[153px] 2xl:h-[219px] relative z-[-1]">
           <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid1.mp4" autoplay loop muted></video>
         </div>
       </div>
 
-      <div class="container pt-[90px]">
-        <h1 class="text-3xl md:text-[87px] md:leading-[115px] text-center text-white">
-          We curate<span class="gr-blue-text">,</span> and produce <span class="gr-blue-text">content-focused
-            conferences</span> for a professional and experienced audience.
-        </h1>
+      <div class="container pt-[140px] md:pt-[170px]1 lg:pt-[90px]">
+        <div class="max-w-[380px] md:max-w-[640px] lg:max-w-[1140px] 2xl:max-w-none mx-auto">
+          <h1 class="text-3xl leading-[45px] md:leading-[64px] md:text-5xl lg:text-7xl lg:leading-[90px] 2xl:text-[87px] 2xl:leading-[115px] text-center text-white">
+            We curate<span class="gr-blue-text">,</span> and produce <span class="gr-blue-text">content-focused
+              conferences</span> for a professional and experienced audience<span class="gr-blue-text">.</span>
+          </h1>
 
-        <div class="flex space-x-6 items-center justify-center">
-          <a href=""
-            class="inline-flex items-center justify-center bg-white/10 text-xl px-5 py-2.5 min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300">
-            All about sponsorship
-          </a>
+          <!-- Desktop CTA section -->
+          <div class="hidden lg:flex items-center justify-center mt-[140px] 2xl:mt-[200px]">
+            <a href=""
+              class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:mr-6 rtl:ml-6 ">
+              All about sponsorship
+            </a>
+            <a href="" class=" flex items-center md:text-xl text-white group">
+              <span class="group-hover:underline ltr:mr-2 rtl:ml-2">Our conferences</span>
+              <img src="./images/down-arrow.svg" alt="down arrow">
+            </a>
+          </div>
         </div>
       </div>
       <!-- Left mid video -->
-      <div class="absolute ltr:left-[160px] rtl:right-[160px] top-1/2 animate-vector z-[-1]">
-        <div class="content w-[476px] h-[355px] relative z-[-1]">
+      <div class="absolute lg:ltr:left-[100px] lg:rtl:right-[100px] ltr:2xl:left-[160px] rtl:2xl:right-[160px] top-[60%] lg:top-[35%] 2xl:top-1/2 animate-vector z-[-1]">
+        <div class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px]  lg:w-[333px] 2xl:w-[476px] lg:h-[248px] 2xl:h-[355px] relative z-[-1]">
           <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid2.mp4" autoplay loop muted></video>
         </div>
       </div>
 
       <!-- Right mid video -->
-      <div class="absolute ltr:right-0 rtl:left-0 top-[35%] animate-vector z-[-1]">
-        <div class="content w-[370px] h-[222px] relative z-[-1]">
+      <div class="absolute ltr:right-0 rtl:-left-4 top-[45%] md:top-[35%] lg:top-[25%] 2xl:top-[35%] animate-vector z-[-1]">
+        <div class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px]  lg:w-[260px] lg:h-[155px] 2xl:w-[370px] 2xl:h-[222px] relative z-[-1]">
           <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid4.mp4" autoplay loop muted></video>
         </div>
       </div>
 
       <!-- Right bottom video -->
-      <div class="absolute ltr:right-[315px] rtl:left-[315px] top-[70%] animate-vector z-[-1]">
-        <div class="content w-[307px] h-[350px] relative z-[-1]">
+      <div class="absolute ltr:right-8 rtl:left-8 lg:ltr:right-[140px] lg:rtl:left-[140px] ltr:2xl:right-[315px] rtl:2xl:left-[315px] top-[75%] md:top-[70%] animate-vector z-[-1]">
+        <div class="content w-[125px] h-[150px] lg:w-[230px] 2xl:w-[307px] lg:h-[280px] 2xl:h-[350px] relative z-[-1]">
           <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid5.mp4" autoplay loop muted></video>
         </div>
       </div>
     </div>
+
+    <!-- Mobile CTA section -->
+    <div class="flex flex-col lg:hidden space-y-6 items-center justify-center mt-12">
+      <a href=""
+        class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:mr-6 rtl:ml-6 ">
+        All about sponsorship
+      </a>
+      <a href="" class=" flex items-center md:text-xl text-white group">
+        <span class="group-hover:underline ltr:mr-2 rtl:ml-2">Our conferences</span>
+        <img src="./images/down-arrow.svg" alt="down arrow">
+      </a>
+    </div>
   </section>
 
-  <section id="uxi-live" class="relative mt-18 md:mt-24 ">
+  <section id="uxi-live" class="hidden relative mt-18 md:mt-24 ">
     <div class="">
       <div id="uxi-conference"
         class="container md:absolute md:top-1/3 top-0 left-52 text-white transition duration-500 ease-in-out transform hover:top-1/4 z-30">
@@ -149,7 +178,7 @@
   </section>
 
 
-  <section id="pm-live" class="relative">
+  <section id="pm-live" class="hidden relative">
     <div class="">
       <div id="uxi-conference"
         class="container md:absolute md:top-1/3 top-0 left-52 text-white transition duration-500 ease-in-out transform hover:top-1/4 z-30">
@@ -183,7 +212,7 @@
     </div>
   </section>
 
-  <section id="com-plex" class="relative mt-18 md:mb-24 ">
+  <section id="com-plex" class="hidden relative mt-18 md:mb-24 ">
     <div class="">
       <div id="uxi-conference"
         class="container md:absolute md:top-1/3 top-0 left-52 text-white transition duration-500 ease-in-out transform hover:top-1/4 z-30">
