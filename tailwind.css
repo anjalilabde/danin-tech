@@ -10,7 +10,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.2;
     background: linear-gradient(288.5deg, #003FFF -9.14%, #000F3A 20.33%, #000F3A 58.76%, #001B6C 95.28%, #003FFF 113.86%), #102250;
     mix-blend-mode: hard-light;
     transform: matrix(-1, 0, 0, 1, 0, 0);
