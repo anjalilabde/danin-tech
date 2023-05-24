@@ -1,5 +1,5 @@
 <!Doctype html>
-<html dir="ltr">
+<html dir="rtl">
 
 <head>
   <meta charset="UTF-8">
@@ -18,17 +18,15 @@
 
         <button id="hamburger-button"
           class="block lg:hidden text-3xl text-white-white cursor-pointer relative px-2 text-center">
-          <img src="./images/Hamburger-Menu.svg" alt="Hamburger menu icon">
+          <img src="/images/Hamburger-Menu.svg" alt="Hamburger menu icon">
         </button>
 
         <div>
           <a href="#" class="absolute lg:static left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <!-- eng logo -->
-            <img src="./images/danin-logo-e.png" alt="Danmin logo"
-              class="ltr:block rtl:hidden max-h-14 xl:max-h-[77px]">
+            <img src="/images/danin-logo-e.png" alt="Danmin logo" class="ltr:block rtl:hidden max-h-14 xl:max-h-[77px]">
             <!-- Hebrew logo -->
-            <img src="./images/danin-logo-h.png" alt="Danmin logo"
-              class="ltr:hidden rtl:block max-h-14 xl:max-h-[77px]">
+            <img src="/images/danin-logo-h.png" alt="Danmin logo" class="ltr:hidden rtl:block max-h-14 xl:max-h-[77px]">
           </a>
         </div>
 
@@ -63,23 +61,21 @@
   </header>
 
   <section>
-    <!-- Right top video -->
     <div class="absolute left-[100px] -top-4 z-[-1] ltr:left-auto ltr:right-[100px] rtl:left-[100px] animate-vector">
       <div class="content w-[372px] h-[277px] relative z-[-1]">
-        <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid3.mp4" autoplay loop muted></video>
+        <video class="object-cover h-full w-full rounded-xl" src="/videos/right-top.mp4" autoplay loop muted></video>
       </div>
     </div>
 
-    <div class="relative min-h-[1000px]">
-      <!-- Left top video -->
-      <div class="absolute ltr:left-[100px] rtl:right-[100px] top-0 animate-vector z-[-1]">
+    <div class="relative">
+      <div class="hidden md:block absolute ltr:left-[100px] rtl:right-[100px] top-0">
         <div class="content w-[409px] h-[219px] relative z-[-1]">
-          <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid1.mp4" autoplay loop muted></video>
+          <video class="object-cover h-full w-full rounded-xl" src="/videos/left-top-1.mp4" autoplay loop muted></video>
         </div>
       </div>
 
       <div class="container pt-[90px]">
-        <h1 class="text-[87px] leading-[115px] text-center text-white">
+        <h1 class="text-3xl md:text-[87px] md:leading-[115px] text-center text-white">
           We curate<span class="gr-blue-text">,</span> and produce <span class="gr-blue-text">content-focused
             conferences</span> for a professional and experienced audience.
         </h1>
@@ -111,6 +107,112 @@
           <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid5.mp4" autoplay loop muted></video>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="uxi-live" class="relative mt-18 md:mt-24 ">
+    <div class="">
+      <div id="uxi-conference"
+        class="container md:absolute md:top-1/3 top-0 left-52 text-white transition duration-500 ease-in-out transform hover:top-1/4 z-30">
+        <div class="flex items-center justify-center md:justify-start">
+          <img src="/images/uxi-live.png" alt="" class="h-16 md:h-auto">
+          <div class="ltr:ml-2 md:ltr:ml-7 rtl:mr-2ml-2 md:rtl:mr-7 ">
+            <h1 class="text-3xl md:text-5xl font-bold">uxi live</h1>
+            <p class="text-xl md:text-3xl font-extralight">conference</p>
+          </div>
+        </div>
+        <p class="text-center ltr:md:text-left rtl:md:text-right mt-7 text-sm md:text-xl w-full md:w-2/5">our oldest
+          conference brings an annual
+          meeting
+          that enriches and connect
+          the
+          digital
+          .design
+          community - ux, ui
+          and research.</p>
+        <div class="pt-7 text-center ltr:md:text-left rtl:md:text-right ">
+          <p class=" text-white  text-sm md:text-3xl  underline">to the conference site</p>
+        </div>
+      </div>
+
+      <div id="img-gradient" class="relative">
+        <img src="/images/uxi-bw.png" alt="" class="ltr:ml-auto rtl:mr-auto rtl:scale-x-[-1]">
+
+        <div
+          class="absolute top-0 h-full ltr:left-96 rtl:right-96 mx-auto w-2/4 ltr:bg-gradient-to-r rtl:bg-gradient-to-l from-blue-900 md:block hidden">
+        </div>
+      </div>
+    </div>
+    <div id="vertical-text" class="absolute top-1/2 ltr:-right-40 rtl:-left-40 box-border ltr:-rotate-90 rtl:rotate-90">
+      <p class="text-white text-xs md:text-base">Alon Breyar and Eden Assaf / Elementor, uxi live 2022</p>
+    </div>
+  </section>
+
+
+  <section id="pm-live" class="relative">
+    <div class="">
+      <div id="uxi-conference"
+        class="container md:absolute md:top-1/3 top-0 left-52 text-white transition duration-500 ease-in-out transform hover:top-1/4 z-30">
+        <div class="flex items-center justify-center md:justify-end">
+          <div class="ltr:mr-2 md:ltr:mr-7 rtl:ml-2 md:rtl:ml-7 ">
+            <h1 class="text-3xl md:text-5xl font-bold">pm live</h1>
+            <p class="text-xl md:text-3xl font-extralight">conference</p>
+          </div>
+          <img src="/images/pm-live.png" alt="" class="h-16 md:h-auto">
+        </div>
+        <p
+          class="text-center ltr:md:text-right rtl:md:text-left mt-7 text-sm md:text-xl w-full md:w-2/5 ltr:ml-auto rtl:mr-auto">
+          Our
+          conference for SaaS
+          product management brings together product managers for an intensive meeting of mutual enrichment and
+          networking</p>
+        <div class="pt-7 text-center ltr:md:text-right rtl:md:text-left ">
+          <p class=" text-white  text-sm md:text-3xl  underline">to the conference site</p>
+        </div>
+      </div>
+      <div id="img-gradient" class="relative">
+        <img src="/images/pm-live-clr.png" alt="" class="ltr:mr-auto rtl:ml-auto rtl:scale-x-[-1]">
+
+        <div
+          class="absolute top-0 w-3/4 h-full mx-auto ltr:left-12 rtl:right-96 ltr:bg-gradient-to-l rtl:bg-gradient-to-r from-blue-900 md:block hidden">
+        </div>
+      </div>
+    </div>
+    <div id="vertical-text" class="absolute top-1/2 ltr:-left-20 rtl:-right-20 box-border ltr:rotate-90 rtl:-rotate-90">
+      <p class="text-white text-xs md:text-base">Yael A. / Rafael, pm live 2023</p>
+    </div>
+  </section>
+
+  <section id="com-plex" class="relative mt-18 md:mb-24 ">
+    <div class="">
+      <div id="uxi-conference"
+        class="container md:absolute md:top-1/3 top-0 left-52 text-white transition duration-500 ease-in-out transform hover:top-1/4 z-30">
+        <div class="flex items-center justify-center md:justify-start">
+          <img src="/images/com-plex.png" alt="" class="h-16 md:h-auto">
+          <div class="ltr:ml-2 md:ltr:ml-7 rtl:mr-2ml-2 md:rtl:mr-7 ">
+            <h1 class="text-3xl md:text-5xl font-bold">com.plex</h1>
+            <p class="text-xl md:text-3xl font-extralight">conference</p>
+          </div>
+        </div>
+        <p class="text-center ltr:md:text-left rtl:md:text-right mt-7 text-sm md:text-xl w-full md:w-2/5">Our conference
+          for design for
+          complex systems invites to the hall the men and women of cyber, medical, security, fintech and many other
+          verticals</p>
+        <div class="pt-7 text-center ltr:md:text-left rtl:md:text-right ">
+          <p class=" text-white  text-sm md:text-3xl  underline">to the conference site</p>
+        </div>
+      </div>
+
+      <div id="img-gradient" class="relative">
+        <img src="/images/com-plex-bw.png" alt="" class="ltr:ml-auto rtl:mr-auto rtl:scale-x-[-1]">
+
+        <div
+          class="absolute top-0 h-full ltr:left-20 rtl:right-16 mx-auto w-2/4 ltr:bg-gradient-to-r rtl:bg-gradient-to-l from-blue-900 md:block hidden">
+        </div>
+      </div>
+    </div>
+    <div id="vertical-text" class="absolute top-1/2 ltr:-right-20 rtl:-left-20 box-border ltr:-rotate-90 rtl:rotate-90">
+      <p class="text-white text-xs md:text-base">yakar yaniv/ed&u, com.plex 2022</p>
     </div>
   </section>
 </body>
