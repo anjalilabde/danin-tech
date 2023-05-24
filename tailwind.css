@@ -5,6 +5,16 @@
 body{
     @apply font-anomalia bg-blue-900;
 }
+
+html[dir=rtl] .bg-transform-rtl::before{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+html[dir=rtl] #pm-live::before{
+    @apply left-0 right-auto;
+}
+html[dir=ltr] .bg-transform-ltr::before{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
 .content:before {
     content: "";
     position: absolute;

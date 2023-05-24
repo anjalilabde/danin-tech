@@ -60,6 +60,7 @@
       </div>
     </div>
   </header>
+
   <!-- Hero section -->
   <section class="pb-[60px] lg:pb-[140px] overflow-x-hidden">
     <!-- Desktop Right top video -->
@@ -149,45 +150,108 @@
     </div>
   </section>
 
-  <section id="uxi-live" class="relative mt-18 md:mt-24 ">
-    <div class="">
-      <div id="uxi-conference" class="container md:absolute md:top-1/3 top-0 left-52 text-white z-30">
-        <div class="flex items-center justify-center md:justify-start">
-          <img src="./images/uxi-live.png" alt="" class="h-16 md:h-auto">
-          <div class="ltr:ml-2 md:ltr:ml-7 rtl:mr-2ml-2 md:rtl:mr-7 ">
-            <h1 class="text-3xl md:text-5xl font-bold">uxi live</h1>
-            <p class="text-xl md:text-3xl font-extralight">conference</p>
+  <!-- uxi live section -->
+  <section id="uxi-live"
+    class="group relative before:content-[''] before:absolute before:h-full before:w-full before:md:w-[70%] before:bg-dark-900-overlay before:md:bg-dark-overlay bg-transform-rtl">
+
+    <div class="ltr:block rtl:hidden">
+      <!-- Desktop Default image -->
+      <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:hidden md:block group-hover:invisible visible"
+        src="./images/uxi-live-en-default.png" alt="">
+      <!-- Desktop Hover image -->
+      <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:block md:hidden group-hover:visible invisible"
+        src="./images/uxi-live-en-hover.png" alt="">
+    </div>
+
+    <div class="ltr:hidden rtl:block">
+      <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:hidden md:block group-hover:invisible visible"
+        src="./images/uxi-live-he-default.png" alt="">
+      <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:block md:hidden group-hover:visible invisible"
+        src="./images/uxi-live-he-hover.png" alt="">
+    </div>
+
+    <div class="container px-0 md:px-4 md:absolute  md:top-1/2 md:-translate-y-1/2 inset-x-0 text-white">
+      <div class="relative pt-[90px] md:pt-0">
+        <div class="flex items-center justify-center md:justify-start transition ease-in-out duration-300">
+          <img src="./images/uxi-live.png" alt="" class="max-h-16 md:max-h-none">
+          <div class="ltr:ml-2.5 rtl:mr-2.5 md:ltr:ml-7 md:rtl:mr-7 ">
+            <h1 class="text-32px md:text-50px font-bold">uxi live</h1>
+            <p class="text-base md:text-[38px] md:leading-52">conference</p>
           </div>
         </div>
-        <p class="text-center ltr:md:text-left rtl:md:text-right mt-7 text-sm md:text-xl w-full md:w-2/5">our oldest
-          conference brings an annual
-          meeting
-          that enriches and connect
-          the
-          digital
-          .design
-          community - ux, ui
-          and research.</p>
-        <div class="pt-7 text-center ltr:md:text-left rtl:md:text-right ">
-          <p class=" text-white  text-sm md:text-3xl  underline">to the conference site</p>
+        <p
+          class="text-center ltr:md:text-left rtl:md:text-right mt-5 md:mt-7 leading-[27px] xl:text-20px mx-auto md:mx-0 max-w-[280px] md:max-w-[500px] transition ease-in-out duration-300">
+          Our oldest conference brings an annual meeting that enriches and connects the digital design community - UX,
+          UI and research.
+        </p>
+        <div class="pt-7 text-center ltr:md:text-left rtl:md:text-right xl:hidden group-hover:xl:block">
+          <a class="text-white md:text-20px  underline">to the conference site</a>
         </div>
       </div>
 
-      <div id="img-gradient" class="relative">
-        <img src="./images/uxi-bw.png" alt="" class="ltr:ml-auto rtl:mr-auto rtl:scale-x-[-1]">
-
-        <div
-          class="absolute top-0 h-full ltr:left-96 rtl:right-96 mx-auto w-2/4 ltr:bg-gradient-to-r rtl:bg-gradient-to-l from-blue-900 md:block hidden">
+      <!-- Mobile Default image -->
+      <div class="relative">
+        <div class="ltr:block rtl:hidden">
+          <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/uxi-live-en-mob.svg" alt="">
+        </div>
+        <div class="ltr:hidden rtl:block">
+          <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/uxi-live-he-mob.svg" alt="">
         </div>
       </div>
-    </div>
-    <div id="vertical-text" class="absolute top-1/2 ltr:-right-40 rtl:-left-40 box-border ltr:-rotate-90 rtl:rotate-90">
-      <p class="text-white text-xs md:text-base">Alon Breyar and Eden Assaf / Elementor, uxi live 2022</p>
     </div>
   </section>
 
+  <!-- pm live section -->
+  <section id="pm-live"
+    class="group relative before:content-[''] before:absolute before:h-full before:w-full before:md:w-[70%] before:left-auto before:right-0 before:bg-dark-900-overlay before:md:bg-dark-overlay bg-transform-ltr">
+    <div class="ltr:block rtl:hidden">
+      <!-- Desktop Default image -->
+      <img class="hidden ltr:mr-auto rtl:ml-auto group-hover:md:hidden md:block group-hover:invisible visible"
+        src="./images/pm-live-en-default.png" alt="">
+      <!-- Desktop Hover image -->
+      <img class="hidden ltr:mr-auto rtl:ml-auto group-hover:md:block md:hidden group-hover:visible invisible"
+        src="./images/pm-live-en-hover.png" alt="">
+    </div>
 
-  <section id="pm-live" class="relative">
+    <div class="ltr:hidden rtl:block">
+      <img class="hidden ltr:mr-auto rtl:ml-auto group-hover:md:hidden md:block group-hover:invisible visible"
+        src="./images/pm-live-he-default.png" alt="">
+      <img class="hidden ltr:mr-auto rtl:ml-auto group-hover:md:block md:hidden group-hover:visible invisible"
+        src="./images/pm-live-he-hover.png" alt="">
+    </div>
+
+    <div class="container px-0 md:px-4 md:absolute  md:top-1/2 md:-translate-y-1/2 inset-x-0 text-white">
+      <div class="relative pt-[120px] md:pt-0 w-full md:w-[50%] xl:w-[40%] rtl:ml-0 rtl:mr-auto ltr:ml-auto">
+        <div class="flex items-center justify-center md:justify-start transition ease-in-out duration-300">
+          <img src="./images/pm-live.png" alt="" class="max-h-16 md:max-h-none">
+          <div class="ltr:ml-2.5 rtl:mr-2.5 md:ltr:ml-7 md:rtl:mr-7 ">
+            <h1 class="text-32px md:text-50px font-bold">PM LIVE</h1>
+            <p class="text-base md:text-[38px] md:leading-52">conference</p>
+          </div>
+        </div>
+        <p
+          class="text-center ltr:md:text-left rtl:md:text-right mt-5 md:mt-7 leading-[27px] xl:text-20px mx-auto md:mx-0 max-w-[280px] md:max-w-[500px] transition ease-in-out duration-300">
+          Our conference for SaaS product management brings together product managers for an intensive meeting of mutual
+          enrichment and networking
+        </p>
+        <div class="pt-7 text-center ltr:md:text-left rtl:md:text-right xl:hidden group-hover:xl:block">
+          <a class="text-white md:text-20px  underline">to the conference site</a>
+        </div>
+      </div>
+
+      <!-- Mobile Default image -->
+      <div class="relative">
+        <div class="ltr:block rtl:hidden">
+          <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/pm-live-en-mob.svg" alt="">
+        </div>
+        <div class="ltr:hidden rtl:block">
+          <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/pm-live-he-mob.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="pm-live" class="hidden relative">
     <div class="">
       <div id="uxi-conference"
         class="container md:absolute md:top-1/3 top-0 left-52 text-white transition duration-500 ease-in-out transform hover:top-1/4 z-30">
@@ -219,9 +283,9 @@
     <div id="vertical-text" class="absolute top-1/2 ltr:-left-20 rtl:-right-20 box-border ltr:rotate-90 rtl:-rotate-90">
       <p class="text-white text-xs md:text-base">Yael A. / Rafael, pm live 2023</p>
     </div>
-  </section>
+  </section> -->
 
-  <section id="com-plex" class="relative mt-18 md:mb-24 ">
+  <section id="com-plex" class="hidden relative mt-18 md:mb-24 ">
     <div class="">
       <div id="uxi-conference"
         class="container md:absolute md:top-1/3 top-0 left-52 text-white transition duration-500 ease-in-out transform hover:top-1/4 z-30">
