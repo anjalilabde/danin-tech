@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    @apply scroll-smooth;
+}
 body{
     @apply font-anomalia bg-blue-900;
 }
