@@ -19,6 +19,9 @@ module.exports = {
           "primary": "#102250",
           900: "#010C27",
         },
+        gray:{
+          550:"#D6E1FC"
+        }
       },
       fontSize: {
         '20px': ['20px', '35px'],
@@ -30,6 +33,8 @@ module.exports = {
       },
       backgroundImage:{
         'dark-900-overlay': 'linear-gradient(180deg, #010C27 0%, #01091C 21.82%, #010C27 100%)',
+        'dark-800-overlay': 'linear-gradient(359.43deg, #010C27 57.61%, rgba(1, 12, 39, 0.6) 59.81%, rgba(1, 12, 39, 0.12) 63.13%, rgba(1, 12, 39, 0) 66.61%)',
+        'dark-500-overlay': 'linear-gradient(360deg, #010C27 0%, rgba(1, 12, 39, 0.6) 16.23%, rgba(1, 12, 39, 0.12) 40.79%, rgba(1, 12, 39, 0) 66.59%)',
         'dark-overlay': 'linear-gradient(90deg, #010C27 33.59%, rgba(1, 12, 39, 0.74) 73.48%, rgba(1, 12, 39, 0) 100%);'
       }
     },
