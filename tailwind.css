@@ -35,6 +35,15 @@ html[dir=ltr] .bg-transform-ltr::before{
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+.animate-vector {
+    -webkit-animation: cube 6s ease-in-out infinite !important;
+    animation: cube 4s ease-in-out infinite !important;
+}
+.bg-dark-400-overlay{
+    background: radial-gradient(325.52% 125.1% at 1.67% 99.44%, #BE7BFA 0%, rgba(0, 63, 255, 0.57) 23.99%, rgba(1, 12, 39, 0) 66.22%, #010C27 100%), #010C27;;
+}
+
 @-webkit-keyframes cube {
     50% {
         transform: translateY(1rem)
@@ -45,11 +54,4 @@ html[dir=ltr] .bg-transform-ltr::before{
     50% {
         transform: translateY(1rem)
     }
-}
-.animate-vector {
-    -webkit-animation: cube 6s ease-in-out infinite !important;
-    animation: cube 4s ease-in-out infinite !important;
-}
-.bg-dark-400-overlay{
-    background: radial-gradient(325.52% 125.1% at 1.67% 99.44%, #BE7BFA 0%, rgba(0, 63, 255, 0.57) 23.99%, rgba(1, 12, 39, 0) 66.22%, #010C27 100%), #010C27;;
 }

@@ -34,6 +34,9 @@ module.exports = {
       borderRadius:{
         '20px':"20px"
       },
+      animation: {
+        'spin-slow': 'spin 8s linear infinite',
+      },
       backgroundImage:{
         'dark-900-overlay': 'linear-gradient(180deg, #010C27 0%, #01091C 21.82%, #010C27 100%)',
         'dark-800-overlay': 'linear-gradient(359.43deg, #010C27 57.61%, rgba(1, 12, 39, 0.6) 59.81%, rgba(1, 12, 39, 0.12) 63.13%, rgba(1, 12, 39, 0) 66.61%)',
