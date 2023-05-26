@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx http-server",
-    "watch": "npx tailwindcss -i tailwind.css -o ./public/css/app.css --watch"
+    "watch": "npx tailwindcss -i tailwind.css -o ./public/css/app.css --watch",
+    "prod": "npx tailwindcss -i tailwind.css -o ./public/css/app.css --minify"
   },
   "keywords": [],
   "author": "",
