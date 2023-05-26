@@ -4,6 +4,7 @@
     font-style: normal;
     src: url('anomalia-regular-aaa.woff2') format('woff2'),
     url('anomalia-regular-aaa.woff') format('woff');
+    font-display: swap;
 }
 @font-face{
     font-family: 'anomalia';
@@ -11,4 +12,5 @@
     font-style: normal;
     src: url('anomalia-bold-aaa.woff2') format('woff2'),
     url('anomalia-bold-aaa.woff') format('woff');
+    font-display: swap;
 }
