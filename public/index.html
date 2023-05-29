@@ -16,77 +16,551 @@
 </head>
 
 <body>
-    <section class="m-4">
-        <div class="container">
-            <div class="border border-solid border-red-400 rounded-20px p-16">
-                <div class="mb-12">
-                    <h1 class="text-white text-5xl font-bold">Contact us for information on sponsorship at conferences
-                        <span class="gr-blue-text  text-xl font-normal"> (we'll be happy to talk about anything
-                            else,too)</span>
-                    </h1>
+    <header class="relative pt-6 pb-2 lg:py-12 min-h-[100px] flex items-center">
+        <div class="container max-w-[1764px]">
+            <div class="flex justify-between items-center">
+
+                <button id="hamburger-button"
+                    class="block lg:hidden text-3xl text-white-white cursor-pointer relative px-2 text-center">
+                    <img src="./images/Hamburger-Menu.svg" alt="Hamburger menu icon">
+                </button>
+
+                <div>
+                    <a href="#" class="absolute lg:static left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <!-- eng logo -->
+                        <img src="./images/danin-logo-e.png" alt="Danmin logo"
+                            class="ltr:block rtl:hidden max-h-14 xl:max-h-[77px]">
+                        <!-- Hebrew logo -->
+                        <img src="./images/danin-logo-h.png" alt="Danmin logo"
+                            class="ltr:hidden rtl:block max-h-14 xl:max-h-[77px]">
+                    </a>
                 </div>
-                <div class="mb-12 border border-white/20 rounded-full py-4 px-9">
-                    <div class="flex justify-center items-center space-x-3">
-                        <div class="border-r border-solid border-white/40">
-                            <p class="text-xl text-white">Name</p>
-                            <input type="text" placeholder="your full name"
-                                class="bg-transparent placeholder:text-white/20 py-4">
-                        </div>
+                <!-- Desktop menu -->
+                <div
+                    class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[585px] xl:max-w-[820px]">
+                    <ul class="flex bg-white/[0.15] rounded-full py-2.5 px-2.5 space-x-4 xl:space-x-5">
+                        <li class="flex-shrink-0">
+                            <a href="#uxi-live"
+                                class="block text-sm xl:text-xl text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">OUR
+                                CONFRENCES</a>
+                        </li>
+                        <li class="flex-shrink-0">
+                            <a href="#additional-projects"
+                                class="block text-sm xl:text-xl text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">SALARY
+                                SURVEYS</a>
+                        </li>
+                        <li class="flex-shrink-0">
+                            <a href="#about-section"
+                                class="block text-sm xl:text-xl text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">ABOUT</a>
+                        </li>
+                        <li class="flex-shrink-0">
+                            <a href="#contact-section"
+                                class="block text-sm xl:text-xl text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">CONTACT</a>
+                        </li>
+                        <li class="flex-shrink-0">
+                            <a href="#"
+                                class="block text-sm xl:text-xl text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">HEBREW</a>
+                        </li>
+                    </ul>
+                </div>
 
-                        <div class="border-r border-solid border-white/40">
-                            <p class="text-xl text-white">phone</p>
-                            <input type="text" placeholder="your phone number"
-                                class="bg-transparent placeholder:text-white/20 py-4">
-                        </div>
-
-                        <div class="border-r border-solid border-white/40">
-                            <p class="text-xl text-white">mail</p>
-                            <input type="text" placeholder="youremail address"
-                                class="bg-transparent placeholder:text-white/20 py-4">
-                        </div>
-
-                        <div class="">
-                            <p class="text-xl text-white">How can we help you?</p>
-                            <input type="text" placeholder="what would you like to talk about?"
-                                class="bg-transparent placeholder:text-white/20 py-4">
-                        </div>
-
-                        <div>
-                            <button class="bg-white/10 rounded-full py-3 px-10 text-white/40">
-                                Submit
+                <!-- Mobile menu -->
+                <div id="mob-menu">
+                    <div id="mob-menu-overlay" class="hidden fixed bg-black/50 inset-0 z-[2]"></div>
+                    <div id="mob-menu-inner"
+                        class="flex flex-col p-6 fixed inset-0 z-[2] w-full bg-dark-400-overlay max-w-[360px] h-full transition ease-in-out duration-300 ltr:-translate-x-full rtl:translate-x-full">
+                        <div class="relative">
+                            <img src="./images/danin-logo-e.png" alt="Danmin logo"
+                                class="mx-auto ltr:block rtl:hidden max-h-14 xl:max-h-[77px]">
+                            <img src="./images/danin-logo-h.png" alt="Danmin logo"
+                                class="mx-auto ltr:hidden rtl:block max-h-14 xl:max-h-[77px]">
+                            <!-- nav close button -->
+                            <button id="menu-closer" class="absolute ltr:right-0 rtl:left-0 top-1/2 -translate-y-1/2">
+                                <img src="./images/Menu-close.png" alt="">
                             </button>
                         </div>
+
+                        <div class="pt-[64px] h-full overflow-y-auto">
+                            <ul class="flex flex-col justify-center items-center space-y-4">
+                                <li class="flex-shrink-0">
+                                    <a href="#uxi-live"
+                                        class="block text-20px text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">OUR
+                                        CONFRENCES</a>
+                                </li>
+                                <li class="flex-shrink-0">
+                                    <a href="#additional-projects"
+                                        class="block text-20px text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">SALARY
+                                        SURVEYS</a>
+                                </li>
+                                <li class="flex-shrink-0">
+                                    <a href="#about-section"
+                                        class="block text-20px text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">ABOUT</a>
+                                </li>
+                                <li class="flex-shrink-0">
+                                    <a href="#contact-section"
+                                        class="block text-20px text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">CONTACT</a>
+                                </li>
+                                <li class="flex-shrink-0">
+                                    <a href="#"
+                                        class="block text-20px text-white hover:bg-white py-2.5 xl:py-3.5 px-3.5 xl:px-5 hover:text-blue-primary rounded-full">HEBREW</a>
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- Hero section -->
+    <section class="pb-[60px] lg:pb-[140px] overflow-x-hidden">
+        <!-- Desktop Right top video -->
+        <div
+            class="hidden lg:block absolute -top-4 z-[-1] ltr:left-auto ltr:right-0 rtl:left-0 ltr:md:left-auto ltr:md:right-5 rtl:md:left-5 ltr:2xl:right-[100px] rtl:2xl:left-[100px] animate-vector">
+            <div
+                class="content w-[180px] h-[135px] lg:w-[260px] lg:h-[193px] 2xl:w-[372px] 2xl:h-[277px] relative z-[-1]">
+                <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid3.mp4" autoplay loop
+                    muted></video>
+            </div>
+        </div>
 
+        <div class="relative min-h-[600px] 2xl:min-h-[1000px]">
+            <!-- Mobile Right top video -->
+            <div class="block lg:hidden absolute top-0 z-[-1] ltr:left-auto ltr:-right-4 rtl:left-4 animate-vector">
+                <div
+                    class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px] lg:w-[260px] lg:h-[193px] 2xl:w-[372px] 2xl:h-[277px] relative z-[-1]">
+                    <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid3.mp4" autoplay loop
+                        muted></video>
+                </div>
+            </div>
 
-                <div>
-                    <h1 class="text-white text-xl font-semibold md:mb-[30px]">
-                        Our contact details
+            <!-- Left top video -->
+            <div
+                class="absolute top-6 rtl:left-auto ltr:-left-4  ltr:2xl:left-[100px] rtl:2xl:right-[100px] lg:top-0 animate-vector z-[-1]">
+                <div
+                    class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px]  lg:w-[286px] 2xl:w-[409px] lg:h-[153px] 2xl:h-[219px] relative z-[-1]">
+                    <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid1.mp4" autoplay loop
+                        muted></video>
+                </div>
+            </div>
+
+            <div class="container pt-[140px] md:pt-[170px]1 lg:pt-[90px]">
+                <div class="max-w-[380px] md:max-w-[640px] lg:max-w-[1140px] 2xl:max-w-none mx-auto">
+                    <h1
+                        class="text-3xl leading-[45px] md:leading-[64px] md:text-5xl lg:text-7xl lg:leading-[90px] 2xl:text-[87px] 2xl:leading-[115px] text-center text-white">
+                        We curate<span class="gr-blue-text">,</span> and produce <span
+                            class="gr-blue-text">content-focused
+                            conferences</span> for a professional and experienced audience<span
+                            class="gr-blue-text">.</span>
                     </h1>
-                    <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 items-center">
-                        <a href="tel:03-685-1110"
-                            class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:md:mr-6 rtl:md:ml-6 ">
-                            <img src="./images/phone.png" alt="" class="ltr:mr-3 rtl:ml-3 text-sm md:text-xl">
-                            <p class="font-light">03-685-1110</p>
+
+                    <!-- Desktop CTA section -->
+                    <div class="hidden lg:flex items-center justify-center mt-[140px] 2xl:mt-[200px]">
+                        <a href="#contact-section"
+                            class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:mr-6 rtl:ml-6 ">
+                            All about sponsorship
                         </a>
-                        <a href="mailto:info@danin.co.il"
-                            class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300">
-                            <img src="./images/email.png" alt="" class="ltr:mr-3 rtl:ml-3  text-sm md:text-xl ">
-                            <p>info@danin.co.il</p>
+                        <a href="#uxi-live" class=" flex items-center md:text-xl text-white group">
+                            <span class="group-hover:underline ltr:mr-2 rtl:ml-2">Our conferences</span>
+                            <img src="./images/down-arrow.svg" alt="down arrow">
                         </a>
                     </div>
-
-
                 </div>
-                <div>
-                    <img src="./images/Hearts.svg" alt="heart">
+            </div>
+            <!-- Left mid video -->
+            <div
+                class="absolute lg:ltr:left-[100px] lg:rtl:right-[100px] ltr:2xl:left-[160px] rtl:2xl:right-[160px] top-[60%] lg:top-[35%] 2xl:top-1/2 animate-vector z-[-1]">
+                <div
+                    class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px]  lg:w-[333px] 2xl:w-[476px] lg:h-[248px] 2xl:h-[355px] relative z-[-1]">
+                    <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid2.mp4" autoplay loop
+                        muted></video>
                 </div>
+            </div>
 
+            <!-- Right mid video -->
+            <div
+                class="absolute ltr:right-0 rtl:-left-4 top-[45%] md:top-[35%] lg:top-[25%] 2xl:top-[35%] animate-vector z-[-1]">
+                <div
+                    class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px]  lg:w-[260px] lg:h-[155px] 2xl:w-[370px] 2xl:h-[222px] relative z-[-1]">
+                    <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid4.mp4" autoplay loop
+                        muted></video>
+                </div>
+            </div>
+
+            <!-- Right bottom video -->
+            <div
+                class="absolute ltr:right-8 rtl:left-8 lg:ltr:right-[140px] lg:rtl:left-[140px] ltr:2xl:right-[315px] rtl:2xl:left-[315px] top-[75%] md:top-[70%] animate-vector z-[-1]">
+                <div
+                    class="content w-[125px] h-[150px] lg:w-[230px] 2xl:w-[307px] lg:h-[280px] 2xl:h-[350px] relative z-[-1]">
+                    <video class="object-cover h-full w-full rounded-xl" src="./videos/Vid5.mp4" autoplay loop
+                        muted></video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile CTA section -->
+        <div class="flex flex-col lg:hidden space-y-6 items-center justify-center mt-12">
+            <a href=""
+                class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:mr-6 rtl:ml-6 ">
+                All about sponsorship
+            </a>
+            <a href="" class=" flex items-center md:text-xl text-white group">
+                <span class="group-hover:underline ltr:mr-2 rtl:ml-2">Our conferences</span>
+                <img src="./images/down-arrow.svg" alt="down arrow">
+            </a>
+        </div>
+    </section>
+
+    <!-- uxi live section -->
+    <section id="uxi-live"
+        class="group relative before:content-[''] before:absolute before:h-full before:w-full before:md:w-[70%] before:bg-dark-900-overlay before:md:bg-dark-overlay bg-transform-rtl">
+
+        <div class="ltr:block rtl:hidden">
+            <!-- Desktop Default image -->
+            <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:hidden md:block group-hover:invisible visible"
+                src="./images/uxi-live-en-default.png" alt="">
+            <!-- Desktop Hover image -->
+            <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:block md:hidden group-hover:visible invisible"
+                src="./images/uxi-live-en-hover.png" alt="">
+        </div>
+
+        <div class="ltr:hidden rtl:block">
+            <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:hidden md:block group-hover:invisible visible"
+                src="./images/uxi-live-he-default.png" alt="">
+            <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:block md:hidden group-hover:visible invisible"
+                src="./images/uxi-live-he-hover.png" alt="">
+        </div>
+
+        <div class="container px-0 md:px-4 md:absolute  md:top-1/2 md:-translate-y-1/2 inset-x-0 text-white">
+            <div class="relative pt-[90px] md:pt-0 transition ease-in-out duration-500 group-hover:-translate-y-5">
+                <div class="flex items-center justify-center md:justify-start transition ease-in-out duration-300">
+                    <img src="./images/uxi-live.png" alt="" class="max-h-16 md:max-h-none">
+                    <div class="ltr:ml-2.5 rtl:mr-2.5 md:ltr:ml-7 md:rtl:mr-7 ">
+                        <h1 class="text-32px md:text-50px font-bold uppercase">uxi live</h1>
+                        <p class="text-base md:text-[38px] md:leading-52">conference</p>
+                    </div>
+                </div>
+                <p
+                    class="text-center ltr:md:text-left rtl:md:text-right mt-5 md:mt-7 leading-[27px] xl:text-20px mx-auto md:mx-0 max-w-[280px] md:max-w-[550px] transition ease-in-out duration-300">
+                    Our oldest conference brings an annual meeting that enriches and connects the digital design
+                    community - UX,
+                    UI and research.
+                </p>
+                <div
+                    class="pt-7 xl:pt-12 text-center ltr:md:text-left rtl:md:text-right xl:opacity-0 group-hover:xl:opacity-100 transition ease-in-out duration-500 group-hover:xl:-translate-y-5">
+                    <a class="text-white md:text-20px  underline">to the conference site</a>
+                </div>
+            </div>
+
+            <!-- Mobile Default image -->
+            <div class="relative">
+                <div class="ltr:block rtl:hidden">
+                    <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/uxi-live-en-mob.svg"
+                        alt="">
+                </div>
+                <div class="ltr:hidden rtl:block">
+                    <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/uxi-live-he-mob.svg"
+                        alt="">
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- pm live section -->
+    <section id="pm-live"
+        class="group relative before:content-[''] before:absolute before:h-full before:w-full before:md:w-[70%] before:left-auto before:right-0 before:bg-dark-900-overlay before:md:bg-dark-overlay bg-transform-ltr">
+        <div class="ltr:block rtl:hidden">
+            <!-- Desktop Default image -->
+            <img class="hidden ltr:mr-auto rtl:ml-auto group-hover:md:hidden md:block group-hover:invisible visible"
+                src="./images/pm-live-en-default.png" alt="">
+            <!-- Desktop Hover image -->
+            <img class="hidden ltr:mr-auto rtl:ml-auto group-hover:md:block md:hidden group-hover:visible invisible"
+                src="./images/pm-live-en-hover.png" alt="">
+        </div>
+
+        <div class="ltr:hidden rtl:block">
+            <img class="hidden ltr:mr-auto rtl:ml-auto group-hover:md:hidden md:block group-hover:invisible visible"
+                src="./images/pm-live-he-default.png" alt="">
+            <img class="hidden ltr:mr-auto rtl:ml-auto group-hover:md:block md:hidden group-hover:visible invisible"
+                src="./images/pm-live-he-hover.png" alt="">
+        </div>
+
+        <div class="container px-0 md:px-4 md:absolute  md:top-1/2 md:-translate-y-1/2 inset-x-0 text-white">
+            <div
+                class="relative pt-[120px] md:pt-0 w-full md:w-[50%] xl:w-[40%] rtl:ml-0 rtl:mr-auto ltr:ml-auto transition ease-in-out duration-500 group-hover:-translate-y-5">
+                <div class="flex items-center justify-center md:justify-start transition ease-in-out duration-300">
+                    <img src="./images/pm-live.png" alt="" class="max-h-16 md:max-h-none">
+                    <div class="ltr:ml-2.5 rtl:mr-2.5 md:ltr:ml-7 md:rtl:mr-7 ">
+                        <h1 class="text-32px md:text-50px font-bold uppercase">PM LIVE</h1>
+                        <p class="text-base md:text-[38px] md:leading-52">conference</p>
+                    </div>
+                </div>
+                <p
+                    class="text-center ltr:md:text-left rtl:md:text-right mt-5 md:mt-7 leading-[27px] xl:text-20px mx-auto md:mx-0 max-w-[280px] md:max-w-[550px] transition ease-in-out duration-300">
+                    Our conference for SaaS product management brings together product managers for an intensive meeting
+                    of mutual
+                    enrichment and networking
+                </p>
+                <div
+                    class="pt-7 xl:pt-12 text-center ltr:md:text-left rtl:md:text-right xl:opacity-0 group-hover:xl:opacity-100 transition ease-in-out duration-500 group-hover:xl:-translate-y-5">
+                    <a class="text-white md:text-20px  underline">to the conference site</a>
+                </div>
+            </div>
+
+            <!-- Mobile Default image -->
+            <div class="relative">
+                <div class="ltr:block rtl:hidden">
+                    <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/pm-live-en-mob.svg"
+                        alt="">
+                </div>
+                <div class="ltr:hidden rtl:block">
+                    <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/pm-live-he-mob.svg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- com-plex section -->
+    <section id="com-plex"
+        class="group relative before:content-[''] before:absolute before:h-full before:w-full before:md:w-[70%] before:bg-dark-900-overlay before:md:bg-dark-overlay bg-transform-rtl">
+
+        <div class="ltr:block rtl:hidden">
+            <!-- Desktop Default image -->
+            <img class="max-h-[864px] hidden ltr:ml-auto rtl:mr-auto group-hover:md:hidden md:block group-hover:invisible visible"
+                src="./images/com-live-en-default.png" alt="">
+            <!-- Desktop Hover image -->
+            <img class="max-h-[864px] hidden ltr:ml-auto rtl:mr-auto group-hover:md:block md:hidden group-hover:visible invisible"
+                src="./images/com-plex-en-hover.png" alt="">
+        </div>
+
+        <div class="ltr:hidden rtl:block">
+            <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:hidden md:block group-hover:invisible visible"
+                src="./images/com-live-he-default.png" alt="">
+            <img class="hidden ltr:ml-auto rtl:mr-auto group-hover:md:block md:hidden group-hover:visible invisible"
+                src="./images/com-live-he-hover.png" alt="">
+        </div>
+
+        <div class="container px-0 md:px-4 md:absolute  md:top-1/2 md:-translate-y-1/2 inset-x-0 text-white">
+            <div class="relative pt-[90px] md:pt-0 transition ease-in-out duration-500 group-hover:-translate-y-5">
+                <div class="flex items-center justify-center md:justify-start transition ease-in-out duration-300">
+                    <img src="./images/com-plex.png" alt="" class="max-h-16 md:max-h-none">
+                    <div class="ltr:ml-2.5 rtl:mr-2.5 md:ltr:ml-7 md:rtl:mr-7 ">
+                        <h1 class="text-32px md:text-50px font-bold uppercase">com.plex</h1>
+                        <p class="text-base md:text-[38px] md:leading-52">conference</p>
+                    </div>
+                </div>
+                <p
+                    class="text-center ltr:md:text-left rtl:md:text-right mt-5 md:mt-7 leading-[27px] xl:text-20px mx-auto md:mx-0 max-w-[280px] md:max-w-[550px] transition ease-in-out duration-300">
+                    Our conference for design for complex systems invites to the hall the men and women of cyber,
+                    medical,
+                    security, fintech and many other verticals
+                </p>
+                <div
+                    class="pt-7 xl:pt-12 text-center ltr:md:text-left rtl:md:text-right xl:opacity-0 group-hover:xl:opacity-100 transition ease-in-out duration-500 group-hover:xl:-translate-y-5">
+                    <a class="text-white md:text-20px  underline">to the conference site</a>
+                </div>
+            </div>
+
+            <!-- Mobile Default image -->
+            <div class="relative">
+                <div class="ltr:block rtl:hidden">
+                    <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/com-plex-en-mob.svg"
+                        alt="">
+                </div>
+                <div class="ltr:hidden rtl:block">
+                    <img class="block md:hidden ltr:ml-auto rtl:mr-auto w-full" src="./images/com-plex-he-mob.svg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional projects section -->
+    <section id="additional-projects" class="py-20 md:py-[100px] overflow-hidden">
+        <div class="container">
+            <h1
+                class="text-white text-[27px] md:text-4xl xl:text-50px font-bold text-center ltr:md:text-left rtl:md:text-right mb-24">
+                additional projects
+            </h1>
+        </div>
+        <div id="projects-cards"
+            class="max-w-[1200px] 2xl:max-w-[1650px] px-4 mx-auto grid md:grid-cols-2 gap-[70px] md:gap-10 xl:gap-[70px] 2xl:gap-x-[140px]">
+            <div id="card-1"
+                class="relative group border border-solid border-gray-550/50 rounded-20px transition ease-in-out duration-500 hover:-translate-y-5">
+                <div class="relative block group-hover:xl:hidden">
+                    <!-- Mobile bg overlay -->
+                    <div class="block md:hidden bg-dark-500-overlay absolute inset-0"></div>
+                    <!-- default image -->
+                    <img src="./images/dafkesher-site-bw.png" alt="" class="rounded-t-20px">
+                </div>
+                <!-- hover image -->
+                <div
+                    class="ltr:xl:-ml-[28px] ltr:2xl:-ml-[38px] rtl:xl:-ml-[46px] rtl:2xl:-ml-[63px] hidden xl:hidden group-hover:xl:block">
+                    <!-- en hover image -->
+                    <img src="./images/dafkesher-site-en-hover.png" alt="" class="ltr:block rtl:hidden rounded-t-20px">
+                    <!-- he hover image -->
+                    <img src="./images/defkesher-he-hover.png" alt="" class="rtl:block ltr:hidden rounded-t-20px">
+                </div>
+
+                <div id="content-bottom"
+                    class="text-white pt-4 pb-10 px-6 lg:px-10 2xl:px-[52px] relative z-[1] before:content-[''] before:absolute before:inset-0 before:top-[-100px] before:bg-dark-800-overlay before:z-[-1] before:h-full before:w-full">
+                    <h3 class="ltr:text-left rtl:text-right text-lg md:text-20px font-bold pb-4">dafkesher.net site</h3>
+                    <p class="ltr:text-left rtl:text-right text-sm md:text-base pb-5">We established dafkesher.net,
+                        which
+                        allows creating, in a very short time, designed contact pages for kindergartens and classes.
+                        Approved by the
+                        Ministry of Education.</p>
+                    <a href="#" class="text-sm md:text-base underline ltr:text-left rtl:text-right">visit
+                        dafkesher.net</a>
+                </div>
+                <!-- floating shape -->
+                <div
+                    class="hidden xl:block absolute rtl:-left-20 ltr:-right-20 translate-y-20 group-hover:translate-y-0 bottom-[-100px] z-[1] opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
+                    <!-- ltr image -->
+                    <img class="ltr:block rtl:hidden" src="./images/floating-shape.png" alt="">
+                    <!-- rtl image -->
+                    <img class="ltr:hidden rtl:block" src="./images/floating-shape-left.png" alt="">
+                </div>
+            </div>
+
+            <div id="card-2"
+                class="relative group border border-solid border-gray-550/50 rounded-20px transition ease-in-out duration-500 hover:-translate-y-5">
+                <div class="relative block group-hover:xl:hidden">
+                    <!-- Mobile bg overlay -->
+                    <div class="block md:hidden bg-dark-500-overlay absolute inset-0"></div>
+                    <!-- default image -->
+                    <img src="./images/salary-survey-bw.png" alt="" class="rounded-t-20px">
+                </div>
+                <!-- hover image -->
+                <div
+                    class="ltr:xl:-mr-[72px] ltr:2xl:-mr-[97px] rtl:xl:-mr-[75px] rtl:2xl:-mr-[101px] hidden xl:hidden group-hover:xl:block">
+                    <!-- en hover image -->
+                    <img src="./images/salary-survey-en-hover.png" alt="" class="ltr:block rtl:hidden rounded-t-20px">
+                    <!-- he hover image -->
+                    <img src="./images/salary-survey-he-hover.png" alt="" class="rtl:block ltr:hidden rounded-t-20px">
+                </div>
+
+                <div id="content-bottom"
+                    class="text-white pt-4 pb-10 px-6 lg:px-10 2xl:px-[52px] relative z-[1] before:content-[''] before:absolute before:inset-0 before:top-[-100px] before:bg-dark-800-overlay before:z-[-1] before:h-full before:w-full">
+                    <h3 class="ltr:text-left rtl:text-right text-lg md:text-20px font-bold pb-4">Our salary surveys</h3>
+                    <p class="ltr:text-left rtl:text-right text-sm md:text-base pb-5">As a service to the communities of
+                        our
+                        conferences, we conduct an in-depth salary and rate survey every year that helps employees, as
+                        well
+                        as managers, to reach more prepared and accurate salary negotiations.</p>
+                    <div class="flex flex-col space-y-2 2xl:space-y-0 2xl:flex-row">
+                        <a href="#"
+                            class="text-sm md:text-base underline ltr:text-left rtl:text-right mr-0 md:ltr:mr-6 md:rtl:ml-6">Product
+                            Management Salary Survey</a>
+                        <a href="#" class="text-sm md:text-base underline ltr:text-left rtl:text-right">design salary
+                            and rates
+                            survey</a>
+                    </div>
+                </div>
+                <!-- floating shape -->
+                <div
+                    class="hidden xl:block absolute rtl:-left-[140px] ltr:-right-[140px] translate-y-20 group-hover:translate-y-0 -bottom-5 z-[1] opacity-0 group-hover:opacity-100 transition ease-in-out duration-500">
+                    <!-- ltr image -->
+                    <img class="ltr:block rtl:hidden" src="./images/floating-shape-2.png" alt="">
+                    <!-- rtl image -->
+                    <img class="ltr:hidden rtl:block" src="./images/floating-left-shape-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about-section" class="pt-2.5 md:pt-[60px]">
+        <div class="container">
+            <h1 class="text-white text-[27px] md:text-4xl xl:text-50px font-bold text-center mb-12">
+                about
+            </h1>
+
+            <h3
+                class="text-white text-2xl md:text-4xl leading-[33px] md:leading-[54px] xl:text-50px xl:leading-[72px] text-center ">
+                From 2010 until
+                today,<span class="gr-blue-text"> Barak Danin </span>(AKA Danin Technologies) initiated <span
+                    class="gr-blue-text">dozens of content-based conferences,</span>
+                hosted hundreds of professional lectures for an experienced audience and gave a platform to
+                <span class="gr-blue-text">leading lecturers in their field.</span> Barak is working with a skilled team
+                of
+                excellent professionals
+                <span class="gr-blue-text">.</span> Together they create professional events and content
+                <span class="gr-blue-text">,</span> which lead the<span class="gr-blue-text"> worlds of design and
+                    product management forward.</span>
+            </h3>
+        </div>
+
+        <div
+            class="relative bofore:content-[''] before:bg-dark-400-overlay before:absolute before:inset-0 before:w-full before:h-full">
+            <video class="object-cover h-full w-full rounded-xl" src="./videos/BarakSpeakingVideoEffects.mp4" autoplay
+                loop muted></video>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact-section" class="py-[100px] md:py-[75px]">
+        <div class="container">
+            <h1 class="text-white text-[27px] md:text-4xl xl:text-50px font-bold text-center mb-6 md:mb-[60px]">
+                contact us
+            </h1>
+            <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 items-center justify-center">
+                <a href="tel:03-685-1110"
+                    class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:md:mr-6 rtl:md:ml-6 ">
+                    <img src="./images/phone.png" alt="" class="ltr:mr-3 rtl:ml-3 text-sm md:text-xl">
+                    <p>03-685-1110</p>
+                </a>
+                <a href="mailto:info@danin.co.il"
+                    class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300">
+                    <img src="./images/email.png" alt="" class="ltr:mr-3 rtl:ml-3  text-sm md:text-xl ">
+                    <p>info@danin.co.il</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-white py-4 lg:py-6 relative">
+            <div class="container flex justify-between items-center">
+                <div class="">
+                    <a href="#">
+                        <!-- eng logo -->
+                        <img src="./images/danin-logo-e.png" alt="Danmin logo"
+                            class="ltr:block rtl:hidden max-h-14 xl:max-h-[77px]">
+                        <!-- Hebrew logo -->
+                        <img src="./images/danin-logo-h.png" alt="Danmin logo"
+                            class="ltr:hidden rtl:block max-h-14 xl:max-h-[77px]">
+                    </a>
+                </div>
+                <p
+                    class="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 text-center text-blue-900 text-xs md:text-base ltr:text-right md:text-center rtl:text-left">
+                    ©
+                    2010-2023 All rights reserved to Danin Technologies</p>
+            </div>
+        </div>
+
+        <div class="hidden lg:block group fixed bottom-8 right-8 z-[2] bg-blue-primary rounded-full">
+            <a href="/contact.html" class="relative">
+                <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-[1]" src="./images/Union.png"
+                    alt="">
+                <div class="animate-spin-slow group-hover:animate-none">
+                    <div class="ltr:block rtl:hidden">
+                        <img class="block group-hover:hidden" src="./images/become-sponsor-EN-text.png" alt="">
+                        <img class="hidden group-hover:block" src="./images/become-sponsor-EN-text-hover.png" alt="">
+                    </div>
+
+                    <div class="ltr:hidden rtl:block">
+                        <img class="block group-hover:hidden" src="./images/become-sponsor-HE-text.png" alt="">
+                        <img class="hidden group-hover:block" src="./images/become-sponsor-HE-text-hover.png" alt="">
+
+                    </div>
+                </div>
+            </a>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
