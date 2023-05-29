@@ -18,7 +18,9 @@
 <body>
     <section class="m-4">
         <div class="container">
-            <div class="border border-solid border-red-400 rounded-20px p-16">
+            <div class="border  border-white/40 rounded-20px p-16 relative">
+                <div class="absolute top-6 ltr:right-6 rtl:left-6"><img src="./images/close-button.svg" alt="close">
+                </div>
                 <div class="mb-12">
                     <h1 class="text-white text-5xl font-bold">Contact us for information on sponsorship at conferences
                         <span class="gr-blue-text  text-xl font-normal"> (we'll be happy to talk about anything
@@ -26,22 +28,22 @@
                     </h1>
                 </div>
                 <div class="mb-12 border border-white/20 rounded-full py-4 px-9">
-                    <div class="flex justify-center items-center space-x-3">
-                        <div class="border-r border-solid border-white/40">
+                    <div class="flex justify-center items-center space-x-4">
+                        <div class="ltr:border-r rtl:border-l border-solid border-white/40">
                             <p class="text-xl text-white">Name</p>
                             <input type="text" placeholder="your full name"
                                 class="bg-transparent placeholder:text-white/20 py-4">
                         </div>
 
-                        <div class="border-r border-solid border-white/40">
+                        <div class="ltr:border-r rtl:border-l border-solid border-white/40">
                             <p class="text-xl text-white">phone</p>
-                            <input type="text" placeholder="your phone number"
+                            <input type="number" placeholder="your phone number"
                                 class="bg-transparent placeholder:text-white/20 py-4">
                         </div>
 
-                        <div class="border-r border-solid border-white/40">
+                        <div class="ltr:border-r rtl:border-l border-solid border-white/40">
                             <p class="text-xl text-white">mail</p>
-                            <input type="text" placeholder="youremail address"
+                            <input type="email" placeholder="youremail address"
                                 class="bg-transparent placeholder:text-white/20 py-4">
                         </div>
 
@@ -50,17 +52,14 @@
                             <input type="text" placeholder="what would you like to talk about?"
                                 class="bg-transparent placeholder:text-white/20 py-4">
                         </div>
-
                         <div>
-                            <button class="bg-white/10 rounded-full py-3 px-10 text-white/40">
+                            <button
+                                class="bg-white/10 rounded-full py-3 px-10 text-white/40 hover:text-blue-900 hover:bg-white">
                                 Submit
                             </button>
                         </div>
                     </div>
                 </div>
-
-
-
                 <div>
                     <h1 class="text-white text-xl font-semibold md:mb-[30px]">
                         Our contact details
@@ -77,13 +76,10 @@
                             <p>info@danin.co.il</p>
                         </a>
                     </div>
-
-
                 </div>
-                <div>
-                    <img src="./images/Hearts.svg" alt="heart">
+                <div class="absolute -bottom-12 ltr:-right-8 rtl:-left-8 rtl:transform rtl:scale-x-[-1]">
+                    <img src="./images/Hearts.svg" alt="Hearts">
                 </div>
-
             </div>
         </div>
     </section>
