@@ -5,10 +5,13 @@ module.exports = {
     extend: {
       container: {
         center: true,
-        padding: "1rem",
+        padding: "1.25rem",
         screens: {
           DEFAULT: '1380px'
         },
+      },
+      screens:{
+        '3xl': '1600px'
       },
       fontFamily: {
         'anomalia': ['anomalia'],

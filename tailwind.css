@@ -6,7 +6,7 @@ html{
     @apply scroll-smooth;
 }
 body{
-    @apply font-anomalia bg-blue-900;
+    @apply font-anomalia bg-blue-900 tracking-[1px];
 }
 
 html[dir=rtl] .bg-transform-rtl::before{
