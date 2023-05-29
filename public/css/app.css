@@ -638,11 +638,6 @@ video {
   margin-right: auto;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -870,12 +865,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-}
-
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -1226,6 +1215,10 @@ video {
   opacity: 0;
 }
 
+.opacity-70 {
+  opacity: 0.7;
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1240,6 +1233,14 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-800 {
+  transition-duration: 800ms;
+}
+
+.duration-\[800ms\] {
+  transition-duration: 800ms;
 }
 
 .ease-in-out {
@@ -1290,7 +1291,7 @@ html[dir=ltr] .bg-transform-ltr::before{
 }
 
 .animate-vector {
-  animation: cube 4s ease-in-out infinite !important;
+  animation: cube 10s ease-in-out infinite !important;
 }
 
 .bg-dark-400-overlay{
@@ -1621,22 +1622,12 @@ html[dir=ltr] .bg-transform-ltr::before{
 }
 
 @media (min-width: 640px) {
-  .sm\:mx-\[70px\] {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-
   .sm\:h-\[135px\] {
     height: 135px;
   }
 
   .sm\:w-\[180px\] {
     width: 180px;
-  }
-
-  .sm\:px-\[54px\] {
-    padding-left: 54px;
-    padding-right: 54px;
   }
 
   .sm\:px-\[70px\] {
@@ -1705,6 +1696,10 @@ html[dir=ltr] .bg-transform-ltr::before{
 
   .md\:max-w-\[640px\] {
     max-width: 640px;
+  }
+
+  .md\:max-w-\[521px\] {
+    max-width: 521px;
   }
 
   .md\:-translate-y-1\/2 {
@@ -2019,16 +2014,6 @@ html[dir=ltr] .bg-transform-ltr::before{
 }
 
 @media (min-width: 1280px) {
-  .xl\:mx-\[135px\] {
-    margin-left: 135px;
-    margin-right: 135px;
-  }
-
-  .xl\:mx-\[70px\] {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-
   .xl\:block {
     display: block;
   }
@@ -2224,29 +2209,24 @@ html[dir=ltr] .bg-transform-ltr::before{
     padding-top: 90px;
   }
 
-  .\32xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .\32xl\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
   }
 
   .\32xl\:text-\[87px\] {
     font-size: 87px;
   }
 
-  .\32xl\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
-  }
-
   .\32xl\:leading-\[115px\] {
     line-height: 115px;
   }
 
-  .\32xl\:leading-\[70px\] {
-    line-height: 70px;
-  }
-
   .\32xl\:leading-\[75px\] {
     line-height: 75px;
+  }
+
+  :is([dir="ltr"] .ltr\:2xl\:left-6) {
+    left: 1.5rem;
   }
 
   :is([dir="ltr"] .ltr\:2xl\:left-\[100px\]) {
@@ -2281,6 +2261,10 @@ html[dir=ltr] .bg-transform-ltr::before{
     left: 315px;
   }
 
+  :is([dir="rtl"] .rtl\:2xl\:right-6) {
+    right: 1.5rem;
+  }
+
   :is([dir="rtl"] .rtl\:2xl\:right-\[100px\]) {
     right: 100px;
   }
@@ -2299,11 +2283,6 @@ html[dir=ltr] .bg-transform-ltr::before{
 }
 
 @media (min-width: 1600px) {
-  .\33xl\:mx-\[135px\] {
-    margin-left: 135px;
-    margin-right: 135px;
-  }
-
   .\33xl\:max-h-\[77px\] {
     max-height: 77px;
   }
@@ -2312,15 +2291,14 @@ html[dir=ltr] .bg-transform-ltr::before{
     max-width: none;
   }
 
-  .\33xl\:space-x-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .\33xl\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .\33xl\:px-\[135px\] {
+    padding-left: 135px;
+    padding-right: 135px;
   }
 
   .\33xl\:py-3 {
@@ -2331,11 +2309,6 @@ html[dir=ltr] .bg-transform-ltr::before{
   .\33xl\:py-3\.5 {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
-  }
-
-  .\33xl\:px-\[135px\] {
-    padding-left: 135px;
-    padding-right: 135px;
   }
 
   .\33xl\:text-\[84px\] {
