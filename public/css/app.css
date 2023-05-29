@@ -1811,6 +1811,11 @@ html[dir=ltr] .bg-transform-ltr::before{
     width: 70%;
   }
 
+  .before\:md\:w-\[75\%\]::before {
+    content: var(--tw-content);
+    width: 75%;
+  }
+
   .before\:md\:bg-dark-overlay::before {
     content: var(--tw-content);
     background-image: linear-gradient(90deg, #010C27 33.59%, rgba(1, 12, 39, 0.74) 73.48%, rgba(1, 12, 39, 0) 100%);;
