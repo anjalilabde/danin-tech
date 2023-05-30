@@ -4,6 +4,7 @@ window.onload = () => {
     const menuToggleButton = document.querySelector("#hamburger-button");
     const menuCloseButton = document.querySelector("#menu-closer");
     const mobNavLinks = document.querySelectorAll('#mob-menu-inner ul li');
+    const desktopNavLinks = document.querySelectorAll('#desktop-menu li a');
 
     const showMenu = () => {
         mobMenuInner.classList.add('translate-x-0');
@@ -23,10 +24,20 @@ window.onload = () => {
         hideMenu();
     };
 
-    for (const mobNavLink of mobNavLinks) {
-        mobNavLink.onclick = () =>{
+
+    for (var i = 0; i < mobNavLinks.length; i++) {
+        mobNavLinks[i].addEventListener("click", function() {
             hideMenu();
-        }
-      }
+          (document.querySelector('.menuActive')) ? document.querySelector('.menuActive').classList.remove('menuActive') : '';
+          this.classList.add('menuActive');
+        });
+      } 
+
+    for (var i = 0; i < desktopNavLinks.length; i++) {
+        desktopNavLinks[i].addEventListener("click", function() {
+          (document.querySelector('.menuActive')) ? document.querySelector('.menuActive').classList.remove('menuActive') : '';
+          this.classList.add('menuActive');
+        });
+      } 
   
   }

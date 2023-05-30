@@ -44,9 +44,11 @@ html[dir=ltr] .bg-transform-ltr::before{
     animation: cube 10s ease-in-out infinite !important;
 }
 .bg-dark-400-overlay{
-    background: radial-gradient(325.52% 125.1% at 1.67% 99.44%, #BE7BFA 0%, rgba(0, 63, 255, 0.57) 23.99%, rgba(1, 12, 39, 0) 66.22%, #010C27 100%), #010C27;;
+    background: linear-gradient(25deg, #BE7BFA 0%, rgba(0, 63, 255, 0.57) 15%, rgba(1, 12, 39, 0) 45%, #010C27 65%), #010C27;
 }
-
+.menuActive{
+    @apply bg-white/10 text-white rounded-full;
+}
 @-webkit-keyframes cube {
     50% {
         transform: translateY(1rem)
