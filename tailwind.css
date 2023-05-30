@@ -8,6 +8,9 @@ html{
 body{
     @apply font-anomalia bg-blue-900 tracking-[1px];
 }
+.mode-vertical{
+    writing-mode: vertical-lr;
+}
 
 html[dir=rtl] .bg-transform-rtl::before{
     transform: matrix(-1, 0, 0, 1, 0, 0);
