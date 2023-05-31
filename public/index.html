@@ -116,7 +116,7 @@
     </header>
 
     <!-- Hero section -->
-    <section class="pb-[60px] lg:pb-[140px] overflow-x-hidden">
+    <section class="pb-[60px] md:pb-[140px] overflow-x-hidden">
         <!-- Desktop Right top video -->
         <div
             class="hidden lg:block absolute -top-4 z-[-1] ltr:left-auto ltr:right-0 rtl:left-0 ltr:md:left-auto ltr:md:right-5 rtl:md:left-5 ltr:2xl:right-[100px] rtl:2xl:left-[100px] animate-vector">
@@ -149,7 +149,7 @@
 
             <div class="container">
                 <div
-                    class="flex flex-col h-[calc(100vh_-_210px)] max-w-[380px] md:max-w-[640px] lg:max-w-[1140px] 3xl:max-w-none mx-auto">
+                    class="flex flex-col h-[calc(100vh_-_132px)] lg:h-[calc(100vh_-_210px)] max-w-[380px] md:max-w-[640px] lg:max-w-[1000px] xl:max-w-[1140px] 3xl:max-w-none mx-auto">
                     <h1
                         class="text-3xl leading-[45px] tracking-[2px] md:leading-[64px] md:text-5xl lg:leading-[90px] 2xl:text-[3.5rem] 2xl:leading-[75px] 3xl:text-[84px] 3xl:leading-[115px] text-center text-white pt-[140px] lg:pt-[40px] 2xl:pt-[90px]">
                         We curate<span class="gr-blue-text">,</span> and produce <span
@@ -159,16 +159,28 @@
                     </h1>
 
                     <!-- Desktop CTA section -->
-                    <div class="hidden lg:flex items-center justify-center mt-auto">
+                    <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row items-center justify-center mt-auto">
                         <a href="#contact-section"
-                            class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:mr-6 rtl:ml-6 ">
+                            class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:md:mr-6 rtl:md:ml-6 ">
                             All about sponsorship
                         </a>
                         <a href="#uxi-live" class=" flex items-center md:text-xl text-white group">
                             <span class="group-hover:underline ltr:mr-2 rtl:ml-2">Our conferences</span>
-                            <img src="./images/down-arrow.svg" alt="down arrow">
+                            <img class="max-h-4 md:max-h-max" src="./images/down-arrow.svg" alt="down arrow">
                         </a>
                     </div>
+
+                    <!-- Mobile CTA section -->
+        <!-- <div class="flex flex-col lg:hidden space-y-6 items-center justify-center mt-12">
+            <a href=""
+                class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:md:mr-6 rtl:md:ml-6 ">
+                All about sponsorship
+            </a>
+            <a href="" class=" flex items-center md:text-xl text-white group">
+                <span class="group-hover:underline ltr:mr-2 rtl:ml-2">Our conferences</span>
+                <img class="max-h-4 md:max-h-max" src="./images/down-arrow.svg" alt="down arrow">
+            </a>
+        </div> -->
                 </div>
             </div>
             <!-- Left mid video -->
@@ -200,18 +212,6 @@
                         loop muted></video>
                 </div>
             </div>
-        </div>
-
-        <!-- Mobile CTA section -->
-        <div class="flex flex-col lg:hidden space-y-6 items-center justify-center mt-12">
-            <a href=""
-                class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:mr-6 rtl:ml-6 ">
-                All about sponsorship
-            </a>
-            <a href="" class=" flex items-center md:text-xl text-white group">
-                <span class="group-hover:underline ltr:mr-2 rtl:ml-2">Our conferences</span>
-                <img src="./images/down-arrow.svg" alt="down arrow">
-            </a>
         </div>
     </section>
 
@@ -360,7 +360,7 @@
     <section id="additional-projects" class="py-20 md:py-[100px] overflow-hidden">
         <div class="container">
             <h1
-                class="text-white text-[27px] md:text-4xl xl:text-50px font-bold text-center ltr:md:text-left rtl:md:text-right mb-24">
+                class="text-white text-[27px] md:text-4xl xl:text-50px font-bold text-center ltr:md:text-left rtl:md:text-right mb-12 md:mb-24">
                 additional projects
             </h1>
         </div>
@@ -499,14 +499,14 @@
             <h1 class="text-white text-[27px] md:text-4xl xl:text-50px font-bold text-center mb-6 md:mb-[60px]">
                 contact us
             </h1>
-            <div class="flex flex-col md:flex-row space-y-5 md:space-y-0 items-center justify-center">
+            <div class="flex flex-col md:flex-row items-center justify-center">
                 <a href="tel:03-685-1110"
-                    class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:md:mr-6 rtl:md:ml-6 ">
+                    class="order-2 md:order-1 mt-5 md:mt-0  inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300 ltr:md:mr-6 rtl:md:ml-6 ">
                     <img src="./images/phone.png" alt="" class="ltr:mr-3 rtl:ml-3 text-sm md:text-xl">
                     <p>03-685-1110</p>
                 </a>
                 <a href="mailto:info@danin.co.il"
-                    class="inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300">
+                    class="order-1 md:order-2 inline-flex items-center justify-center bg-white/10 md:text-xl px-5 py-2.5 min-h-[48px] md:min-h-[55px] rounded-full text-white hover:bg-white hover:text-blue-primary transition ease-in-out duration-300">
                     <img src="./images/email.png" alt="" class="ltr:mr-3 rtl:ml-3  text-sm md:text-xl ">
                     <p>info@danin.co.il</p>
                 </a>
@@ -528,9 +528,8 @@
                     </a>
                 </div>
                 <p
-                    class="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 text-center text-blue-900 text-xs md:text-base ltr:text-right md:text-center rtl:text-left">
-                    ©
-                    2010-2023 All rights reserved to Danin Technologies</p>
+                    class="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 text-blue-900 text-[10px] sm:text-xs md:text-base text-left md:text-center max-w-[187px] sm:max-w-none ml-3">
+                    © 2010-2023 All rights reserved to Danin Technologies</p>
             </div>
         </div>
 
