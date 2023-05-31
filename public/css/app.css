@@ -746,8 +746,8 @@ video {
   height: 894px;
 }
 
-.h-\[calc\(100vh_-_132px\)\] {
-  height: calc(100vh - 132px);
+.h-\[calc\(100vh_-_170px\)\] {
+  height: calc(100vh - 170px);
 }
 
 .h-full {
@@ -843,6 +843,11 @@ video {
   flex-shrink: 0;
 }
 
+.\!translate-x-0 {
+  --tw-translate-x: 0px !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -853,19 +858,9 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-0 {
-  --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .translate-y-20 {
   --tw-translate-y: 5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.\!translate-x-0 {
-  --tw-translate-x: 0px !important;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 
 .rotate-180 {
@@ -1183,6 +1178,10 @@ video {
 
 .pt-\[140px\] {
   padding-top: 140px;
+}
+
+.pt-\[60px\] {
+  padding-top: 60px;
 }
 
 .pt-\[64px\] {
@@ -1994,6 +1993,11 @@ button#hamburger-button.active .line:last-child {
     padding-right: 1rem;
   }
 
+  .md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .md\:py-\[100px\] {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -2010,6 +2014,10 @@ button#hamburger-button.active .line:last-child {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pt-\[140px\] {
+    padding-top: 140px;
   }
 
   .md\:pt-\[170px\] {
