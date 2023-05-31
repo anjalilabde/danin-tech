@@ -9,7 +9,7 @@ window.onload = () => {
     const mobNavLinks = document.querySelectorAll('#mob-menu-inner ul li');
     const desktopNavLinks = document.querySelectorAll('#desktop-menu li a');
 
-    const showMenu = () => {
+    const toggleMenu = () => {
         menuToggleButton.classList.toggle('active');
         mobMenuInner.classList.toggle('!translate-x-0');
         mobMenuOverlay.classList.toggle("hidden");
@@ -17,13 +17,13 @@ window.onload = () => {
     }
    
     menuToggleButton.onclick = () => {
-        showMenu();
+        toggleMenu();
        
     };
 
     for (var i = 0; i < mobNavLinks.length; i++) {
         mobNavLinks[i].addEventListener("click", function() {
-            hideMenu();
+            toggleMenu();
           (document.querySelector('.menuActive')) ? document.querySelector('.menuActive').classList.remove('menuActive') : '';
           this.classList.add('menuActive');
         });
