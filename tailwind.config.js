@@ -43,7 +43,7 @@ module.exports = {
       },
       backgroundImage:{
         'dark-900-overlay': 'linear-gradient(180deg, #010C27 0%, #01091C 21.82%, #010C27 100%)',
-        'video-overlay-top': 'linear-gradient(90deg, #010C27 0%, rgba(1, 12, 39, 0.53) 24.86%, rgba(1, 12, 39, 0.297278) 49.17%, rgba(1, 12, 39, 0.05) 66.3%, rgba(1, 12, 39, 0) 100%)',
+        'video-overlay-top': 'linear-gradient(90deg, #010C27 16.56%, rgba(1, 12, 39, 0.8596) 29.36%, rgba(1, 12, 39, 0.74) 43.49%, rgba(1, 12, 39, 0.26701) 71.74%, rgba(1, 12, 39, 0) 95.58%)',
         'dark-800-overlay': 'linear-gradient(359.43deg, #010C27 57.61%, rgba(1, 12, 39, 0.6) 59.81%, rgba(1, 12, 39, 0.12) 63.13%, rgba(1, 12, 39, 0) 66.61%)',
         'dark-500-overlay': 'linear-gradient(360deg, #010C27 0%, rgba(1, 12, 39, 0.6) 16.23%, rgba(1, 12, 39, 0.12) 40.79%, rgba(1, 12, 39, 0) 66.59%)',
         'dark-400-overlay': 'linear-gradient(25deg, #BE7BFA 0%, rgba(0, 63, 255, 0.57) 15%, rgba(1, 12, 39, 0) 45%, #010C27 65%), #010C27',

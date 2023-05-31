@@ -6,7 +6,7 @@ html{
     @apply scroll-smooth;
 }
 body{
-    @apply font-anomalia bg-blue-900 tracking-[1px];
+    @apply w-full h-screen font-anomalia bg-blue-900 tracking-[1px];
 }
 .mode-vertical{
     writing-mode: vertical-lr;
@@ -48,6 +48,12 @@ html[dir=ltr] .bg-transform-ltr::before{
 }
 .menuActive{
     @apply bg-white/10 text-white rounded-full;
+}
+button#hamburger-button.active .line:first-child {
+    transform: rotate(45deg) translate(0px, 6px);
+}
+button#hamburger-button.active .line:last-child {
+    transform: rotate(-45deg) translateY(-6px) translateY(0px);
 }
 @-webkit-keyframes cube {
     50% {
