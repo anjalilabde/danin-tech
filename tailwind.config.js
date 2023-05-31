@@ -73,5 +73,8 @@ module.exports = {
     
   },
   plugins: [],
+  variants: {
+    space: ['direction'],
+  },
 
 }
