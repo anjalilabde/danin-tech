@@ -38,6 +38,9 @@ module.exports = {
       borderRadius:{
         '20px':"20px"
       },
+      opacity:{
+        15:"0.15",
+      },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
       },
@@ -48,6 +51,7 @@ module.exports = {
         'dark-500-overlay': 'linear-gradient(360deg, #010C27 0%, rgba(1, 12, 39, 0.6) 16.23%, rgba(1, 12, 39, 0.12) 40.79%, rgba(1, 12, 39, 0) 66.59%)',
         'dark-400-overlay': 'linear-gradient(25deg, #BE7BFA 0%, rgba(0, 63, 255, 0.57) 15%, rgba(1, 12, 39, 0) 45%, #010C27 65%), #010C27',
         'dark-overlay': 'linear-gradient(90deg, #010C27 33.59%, rgba(1, 12, 39, 0.74) 73.48%, rgba(1, 12, 39, 0) 100%);',
+        'popup-gr': 'linear-gradient(359.52deg, #001B6C -9.75%, #003FFF 43.48%, #BE7BFA 99.49%), linear-gradient(0deg, #010C27, #010C27);',
         'uxi-live-en-default': 'url("../images/uxi-live-EN-default.png")',
         'uxi-live-en-hover': 'url("../images/uxi-live-EN-hover.png")',
         'uxi-live-he-default': 'url("../images/uxi-live-HE-default.png")',

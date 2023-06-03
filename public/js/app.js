@@ -35,5 +35,28 @@ window.onload = () => {
           this.classList.add('menuActive');
         });
       } 
+
+    const  conferenceButton = document.querySelector('#conference-popup-button');
+    const  conferenceOverlay = document.querySelector('#conference-popup-overlay');
+    const  conferencePopup = document.querySelector('#conference-popup');
+    const  conferencePopupClose = document.querySelector('#conference-popup-close');
+
+    conferenceButton.onclick = () => {
+        conferenceOverlay.classList.add('block');
+        conferenceOverlay.classList.remove('hidden');
+        conferencePopup.classList.add('block');
+        conferencePopup.classList.remove('hidden');
+        document.querySelector('body').classList.add('overflow-hidden');
+       
+    };
+    conferencePopupClose.onclick = () => {
+        conferenceOverlay.classList.remove('block');
+        conferenceOverlay.classList.add('hidden');
+        conferencePopup.classList.remove('block');
+        conferencePopup.classList.add('hidden');
+        document.querySelector('body').classList.remove('overflow-hidden');
+
+       
+    };
   
   }

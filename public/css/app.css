@@ -649,6 +649,10 @@ video {
   order: 2;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -766,6 +770,10 @@ video {
   max-height: 1rem;
 }
 
+.max-h-\[150px\] {
+  max-height: 150px;
+}
+
 .max-h-\[864px\] {
   max-height: 864px;
 }
@@ -776,6 +784,10 @@ video {
 
 .min-h-\[100px\] {
   min-height: 100px;
+}
+
+.min-h-\[30px\] {
+  min-height: 30px;
 }
 
 .min-h-\[48px\] {
@@ -810,6 +822,10 @@ video {
   max-width: 1200px;
 }
 
+.max-w-\[150px\] {
+  max-width: 150px;
+}
+
 .max-w-\[1764px\] {
   max-width: 1764px;
 }
@@ -837,6 +853,10 @@ video {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink-0 {
@@ -890,6 +910,10 @@ video {
   resize: both;
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -906,8 +930,18 @@ video {
   justify-content: space-between;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-\[70px\] {
   gap: 70px;
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -973,8 +1007,16 @@ video {
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .border-solid {
   border-style: solid;
+}
+
+.border-gray-550\/15 {
+  border-color: rgb(214 225 252 / 0.15);
 }
 
 .border-gray-550\/50 {
@@ -991,6 +1033,15 @@ video {
 
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-blue-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 12 39 / var(--tw-bg-opacity));
+}
+
+.bg-blue-900\/75 {
+  background-color: rgb(1 12 39 / 0.75);
 }
 
 .bg-blue-primary {
@@ -1023,6 +1074,10 @@ video {
   background-image: linear-gradient(360deg, #010C27 0%, rgba(1, 12, 39, 0.6) 16.23%, rgba(1, 12, 39, 0.12) 40.79%, rgba(1, 12, 39, 0) 66.59%);
 }
 
+.bg-popup-gr {
+  background-image: linear-gradient(359.52deg, #001B6C -9.75%, #003FFF 43.48%, #BE7BFA 99.49%), linear-gradient(0deg, #010C27, #010C27);;
+}
+
 .bg-video-overlay-top {
   background-image: linear-gradient(90deg, #010C27 16.56%, rgba(1, 12, 39, 0.8596) 29.36%, rgba(1, 12, 39, 0.74) 43.49%, rgba(1, 12, 39, 0.26701) 71.74%, rgba(1, 12, 39, 0) 95.58%);
 }
@@ -1046,6 +1101,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-\[2px\] {
+  padding: 2px;
 }
 
 .px-0 {
@@ -1091,6 +1150,11 @@ video {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-9 {
@@ -1146,6 +1210,10 @@ video {
 
 .pb-\[60px\] {
   padding-bottom: 60px;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
 }
 
 .pt-2 {
@@ -1262,6 +1330,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1292,6 +1364,14 @@ video {
 
 .leading-\[45px\] {
   line-height: 45px;
+}
+
+.leading-\[72px\] {
+  line-height: 72px;
+}
+
+.tracking-\[0\.02em\] {
+  letter-spacing: 0.02em;
 }
 
 .tracking-\[2px\] {
@@ -1453,6 +1533,14 @@ button#hamburger-button.active .line:last-child {
   }
 }
 
+.placeholder\:text-gray-550\/50::-moz-placeholder {
+  color: rgb(214 225 252 / 0.5);
+}
+
+.placeholder\:text-gray-550\/50::placeholder {
+  color: rgb(214 225 252 / 0.5);
+}
+
 .placeholder\:text-white\/20::-moz-placeholder {
   color: rgb(255 255 255 / 0.2);
 }
@@ -1559,6 +1647,11 @@ button#hamburger-button.active .line:last-child {
 .focus\:text-blue-primary:focus {
   --tw-text-opacity: 1;
   color: rgb(16 34 80 / var(--tw-text-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .group:hover .group-hover\:visible {
@@ -2070,6 +2163,10 @@ button#hamburger-button.active .line:last-child {
     line-height: 1.75rem;
   }
 
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
   .md\:leading-52 {
     line-height: 52px;
   }
@@ -2409,6 +2506,15 @@ button#hamburger-button.active .line:last-child {
     line-height: 1.75rem;
   }
 
+  .xl\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .xl\:leading-\[72px\] {
     line-height: 72px;
   }
@@ -2554,6 +2660,16 @@ button#hamburger-button.active .line:last-child {
 
   .\32xl\:text-\[87px\] {
     font-size: 87px;
+  }
+
+  .\32xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .\32xl\:text-20px {
+    font-size: 20px;
+    line-height: 35px;
   }
 
   .\32xl\:leading-\[115px\] {
