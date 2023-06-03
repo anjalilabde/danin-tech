@@ -58,5 +58,16 @@ window.onload = () => {
 
        
     };
+
+    const inputGroups = document.querySelectorAll('#input-group');
+    for (var i = 0; i < inputGroups.length; i++) {
+      inputGroups[i].addEventListener("click", function(e) {
+          (document.querySelector('.active')) ? 
+          document.querySelector('.active').classList.remove('active') : '';
+          this.classList.add('active');
+      });
+
+      
+    } 
   
   }

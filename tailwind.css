@@ -55,6 +55,9 @@ button#hamburger-button.active .line:first-child {
 button#hamburger-button.active .line:last-child {
     transform: rotate(-45deg) translateY(-6px) translateY(0px);
 }
+#input-group.active p {
+    @apply text-sm xl:text-base text-gray-550/50;
+}
 @-webkit-keyframes cube {
     50% {
         transform: translateY(1rem)
