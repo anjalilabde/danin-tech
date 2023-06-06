@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         'anomalia': ['anomalia'],
+        'aran': ['aran'],
       },
       colors: {
         blue: {
@@ -25,7 +26,8 @@ module.exports = {
         },
         gray:{
           550:"#D6E1FC"
-        }
+        },
+        error:"#FF3864",
       },
       fontSize: {
         '20px': ['20px', '35px'],
@@ -43,6 +45,13 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
+        fade: "fadeIn 0.2s ease-in",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 100 },
+        },
       },
       backgroundImage:{
         'dark-900-overlay': 'linear-gradient(180deg, #010C27 0%, #01091C 21.82%, #010C27 100%)',
@@ -66,6 +75,7 @@ module.exports = {
         'com-live-he-hover': 'url("../images/com-plex-HE-hover.png")',
         'video-bg-overlay': 'url("../images/video-overlay.png")',
       },
+      
 
       transitionDuration: {
         '800': '800ms',

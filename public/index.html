@@ -10,6 +10,7 @@
     <link rel="preload" href="./fonts/anomalia/anomalia-bold-aaa.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/anomalia/anomalia-bold-aaa.woff" as="font" type="font/woff" crossorigin>
     <link href="./fonts/anomalia/anomalia.css" rel="stylesheet">
+    <link href="./fonts/aran/aran.css" rel="stylesheet">
     <link href="./css/app.css" rel="stylesheet">
 
     <title>Danin Technologies</title>
@@ -140,6 +141,7 @@
                     class="content w-[150px] h-[110px] sm:w-[180px] sm:h-[135px]  lg:w-[286px] 2xl:w-[409px] lg:h-[153px] 2xl:h-[219px] relative z-[-1]">
                     <video class="object-cover h-full w-full rounded-xl opacity-70" src="./videos/Vid1.mp4" autoplay
                         loop muted></video>
+                        <!-- <img src="/public/images/video-thumb-1.png" class="object-cover h-full w-full rounded-xl opacity-70" alt=""> -->
                 </div>
             </div>
 
@@ -548,8 +550,8 @@
             </button>
         </div>
     </footer>
-        <div id="conference-popup-overlay" class="hidden fixed bg-black/50 inset-0 z-[2]"></div>
-        <div id="conference-popup" class="p-6 hidden fixed inset-0 top-1/2 -translate-y-1/2 z-[2] overflow-y-auto h-full">
+        <div id="conference-popup-overlay" class="hidden fixed bg-black/80 inset-0 z-[2]"></div>
+        <div id="conference-popup" class="p-6 hidden fixed inset-0 top-1/2 -translate-y-1/2 z-[2] overflow-y-auto h-full animate-fade">
             <div class="container h-full 2xl:flex items-center justify-center">
                 <div class="bg-popup-gr p-[2px] rounded-20px">
                     <div class="bg-blue-900 rounded-20px py-[46px] px-[60px] relative">
@@ -565,9 +567,9 @@
                         </div>
                         <div class="mb-10 border border-gray-550/15 bg-blue-900/75 rounded-full py-4 px-8">
                             <div class="grid grid-cols-5 gap-7">
-                                <!-- <div class="flex items-center"> -->
                                 <div id="input-group" class="pr-7 ltr:border-r rtl:border-l border-solid border-gray-550/15">
                                     <p class="text-sm xl:text-xl text-white min-h-[28px] transition duration-500 ease-in-out">Name</p>
+                                    <!-- Note: placehlder default text white class" text-white", error text class "text-error" -->
                                     <input type="text" placeholder="your full name"
                                         class="bg-transparent  text-[10px] xl:text-base placeholder:text-gray-550/50 text-white min-h-[30px] w-full border-0 focus:outline-none">
                                 </div>
@@ -601,6 +603,15 @@
 
                             </div>
                         </div>
+                        <!-- Note: Error message, please add condition above this P tag -->
+                        <p class="text-error font-aran max-w-[656px] my-10 xl:text-xl">The email address mailto:aharonlivkovich@gmail.com was not recognized. Please make sure all addresses appear in the correct format</p>
+
+                        <!-- Note: success message, please add condition above this DIV tag -->
+                        <div class="rounded-full py-5 px-10 border border-solid border-gray-550/15 bg-blue-900/75 text-white uppercase mb-10">
+                            <p class="text-lg xl:text-lg leading-[35px]">Your details have been successfully received. We will do our best to contact you as soon as possible :)</p>
+                            <p class="text-sm">Best regards, Danin Technologies team</p>
+                        </div>
+
                         <div>
                             <h1 class="text-white text-xl font-semibold md:mb-[24px]">
                                 Our contact details

@@ -662,6 +662,11 @@ video {
   margin-right: auto;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -862,6 +867,10 @@ video {
   max-width: 585px;
 }
 
+.max-w-\[656px\] {
+  max-width: 656px;
+}
+
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
@@ -902,6 +911,20 @@ video {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 0.2s ease-in;
 }
 
 @keyframes spin {
@@ -1045,6 +1068,10 @@ video {
 
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
+}
+
+.bg-black\/80 {
+  background-color: rgb(0 0 0 / 0.8);
 }
 
 .bg-blue-900 {
@@ -1214,6 +1241,11 @@ video {
   padding-bottom: 46px;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1270,6 +1302,10 @@ video {
   padding-top: 140px;
 }
 
+.pt-\[5px\] {
+  padding-top: 5px;
+}
+
 .pt-\[60px\] {
   padding-top: 60px;
 }
@@ -1282,16 +1318,16 @@ video {
   padding-top: 90px;
 }
 
-.pt-\[5px\] {
-  padding-top: 5px;
-}
-
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.font-aran {
+  font-family: aran;
 }
 
 .text-20px {
@@ -1392,6 +1428,10 @@ video {
   line-height: 45px;
 }
 
+.leading-\[35px\] {
+  line-height: 35px;
+}
+
 .tracking-\[0\.02em\] {
   letter-spacing: 0.02em;
 }
@@ -1403,6 +1443,11 @@ video {
 .text-blue-900 {
   --tw-text-opacity: 1;
   color: rgb(1 12 39 / var(--tw-text-opacity));
+}
+
+.text-error {
+  --tw-text-opacity: 1;
+  color: rgb(255 56 100 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -2540,10 +2585,6 @@ button#hamburger-button.active .line:last-child {
     line-height: 52px;
   }
 
-  .xl\:text-\[10px\] {
-    font-size: 10px;
-  }
-
   .xl\:text-\[18px\] {
     font-size: 18px;
   }
@@ -2555,6 +2596,11 @@ button#hamburger-button.active .line:last-child {
 
   .xl\:text-xl {
     font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
