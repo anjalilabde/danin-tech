@@ -10,6 +10,9 @@
       margin: 0;
       -moz-appearance: textfield !important;
     }
+    .rotate-y-180{
+        transform: rotateY(180deg);
+    }
  }
 
 html{
