@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+      -webkit-appearance: none;
+      margin: 0;
+      -moz-appearance: textfield !important;
+    }
+ }
+
 html{
     @apply scroll-smooth;
 }
@@ -68,4 +78,16 @@ button#hamburger-button.active .line:last-child {
     50% {
         transform: translateY(1rem)
     }
+}
+#input-group input:focus + p,
+#input-group textarea:focus + p,
+#input-group input:not(:placeholder-shown) + p
+{
+    @apply text-sm xl:text-base text-gray-550/50;
+}
+.link-wrapper{
+    @apply opacity-0;
+}
+.test-class .link-wrapper{
+    @apply opacity-100;
 }

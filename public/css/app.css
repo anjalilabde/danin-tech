@@ -422,6 +422,14 @@ video {
   display: none;
 }
 
+input[type='number']::-webkit-outer-spin-button,
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number'] {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield !important;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -707,6 +715,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-\[-5\%\] {
   margin-top: -5%;
 }
@@ -751,6 +763,10 @@ video {
   height: 150px;
 }
 
+.h-\[30px\] {
+  height: 30px;
+}
+
 .h-\[3px\] {
   height: 3px;
 }
@@ -773,10 +789,6 @@ video {
 
 .max-h-16 {
   max-height: 4rem;
-}
-
-.max-h-20 {
-  max-height: 5rem;
 }
 
 .max-h-4 {
@@ -943,6 +955,10 @@ video {
 
 .resize {
   resize: both;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-5 {
@@ -1231,6 +1247,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-\[100px\] {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1239,11 +1260,6 @@ video {
 .py-\[46px\] {
   padding-top: 46px;
   padding-bottom: 46px;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .pb-10 {
@@ -1302,8 +1318,8 @@ video {
   padding-top: 140px;
 }
 
-.pt-\[5px\] {
-  padding-top: 5px;
+.pt-\[3px\] {
+  padding-top: 3px;
 }
 
 .pt-\[60px\] {
@@ -1424,12 +1440,12 @@ video {
   line-height: 33px;
 }
 
-.leading-\[45px\] {
-  line-height: 45px;
-}
-
 .leading-\[35px\] {
   line-height: 35px;
+}
+
+.leading-\[45px\] {
+  line-height: 45px;
 }
 
 .tracking-\[0\.02em\] {
@@ -1477,15 +1493,6 @@ video {
 
 .opacity-70 {
   opacity: 0.7;
-}
-
-.outline {
-  outline-style: solid;
-}
-
-.blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .filter {
@@ -1613,6 +1620,41 @@ button#hamburger-button.active .line:last-child {
   }
 }
 
+#input-group input:not(:-moz-placeholder-shown) + p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(214 225 252 / 0.5);
+}
+
+#input-group input:focus + p,
+#input-group textarea:focus + p,
+#input-group input:not(:placeholder-shown) + p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(214 225 252 / 0.5);
+}
+
+@media (min-width: 1280px) {
+  #input-group input:not(:-moz-placeholder-shown) + p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #input-group input:focus + p,
+#input-group textarea:focus + p,
+#input-group input:not(:placeholder-shown) + p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+.link-wrapper {
+  opacity: 0;
+}
+
+.test-class .link-wrapper {
+  opacity: 1;
+}
+
 .placeholder\:text-gray-550\/50::-moz-placeholder {
   color: rgb(214 225 252 / 0.5);
 }
@@ -1709,6 +1751,11 @@ button#hamburger-button.active .line:last-child {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:text-blue-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(94 138 255 / var(--tw-text-opacity));
+}
+
 .hover\:text-blue-900:hover {
   --tw-text-opacity: 1;
   color: rgb(1 12 39 / var(--tw-text-opacity));
@@ -1721,6 +1768,10 @@ button#hamburger-button.active .line:last-child {
 
 .hover\:opacity-70:hover {
   opacity: 0.7;
+}
+
+.focus\:h-20:focus {
+  height: 5rem;
 }
 
 .focus\:bg-white:focus {
@@ -1766,11 +1817,6 @@ button#hamburger-button.active .line:last-child {
 
 .group:hover .group-hover\:animate-none {
   animation: none;
-}
-
-.group:hover .group-hover\:text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(94 138 255 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:underline {
@@ -2167,10 +2213,6 @@ button#hamburger-button.active .line:last-child {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .md\:bg-fixed {
-    background-attachment: fixed;
   }
 
   .md\:px-4 {
@@ -2594,13 +2636,13 @@ button#hamburger-button.active .line:last-child {
     line-height: 1.5rem;
   }
 
-  .xl\:text-xl {
-    font-size: 1.25rem;
+  .xl\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .xl\:text-lg {
-    font-size: 1.125rem;
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
@@ -2669,6 +2711,10 @@ button#hamburger-button.active .line:last-child {
 
   .\32xl\:flex {
     display: flex;
+  }
+
+  .\32xl\:grid {
+    display: grid;
   }
 
   .\32xl\:h-\[219px\] {
