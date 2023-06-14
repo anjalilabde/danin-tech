@@ -46,7 +46,7 @@ html[dir=ltr] .bg-transform-ltr::before{
     border-radius: 0.75rem;
 }
 .gr-blue-text{
-    background: linear-gradient(360deg, #001B6C 10%, #003FFF 25%, #BE7BFA 65.71%);
+    background: linear-gradient(360deg, #001B6C 10%, #003FFF 20%, #BE7BFA 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

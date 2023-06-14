@@ -58,4 +58,20 @@ window.onload = () => {
 
        
     };
+
+    window.addEventListener('scroll', function() {
+      var targetDiv = document.querySelector('#contact-section h1');
+      var targetRect = targetDiv.getBoundingClientRect() ;
+    
+      var distanceToTop = targetRect.top;
+    
+      if (distanceToTop <= window.innerHeight) {
+        document.querySelector('#conference-popup-wrapper').classList.remove('opacity-100');
+        document.querySelector('#conference-popup-wrapper').classList.add('opacity-0');
+      }else{
+        document.querySelector('#conference-popup-wrapper').classList.add('opacity-100');
+        document.querySelector('#conference-popup-wrapper').classList.remove('opacity-0');
+      }
+    });
+    
   }

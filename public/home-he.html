@@ -22,7 +22,7 @@
             <div class="flex justify-between items-center">
 
                 <button id="hamburger-button"
-                    class="block lg:hidden text-3xl text-white-white cursor-pointer relative px-2 text-center z-[3]">
+                    class="fixed block lg:hidden text-3xl text-white-white cursor-pointer px-2 text-center z-[3]">
                     <div class="line w-4 h-[3px] bg-white mb-1.5 transition duration-800 ease-in-out"></div>
                     <div class="line w-4 h-[3px] bg-white transition duration-800 ease-in-out"></div>
                 </button>
@@ -151,7 +151,7 @@
                 <div
                     class="flex flex-col h-[calc(100vh_-_170px)] lg:h-[calc(100vh_-_210px)] max-w-[380px] md:max-w-[640px] lg:max-w-[1000px] xl:max-w-[1120px] mx-auto">
                     <h1
-                        class="text-3xl leading-[45px] tracking-[2px] md:leading-[64px] md:text-5xl lg:leading-[90px] 2xl:text-[3.5rem] 2xl:leading-[75px] 3xl:text-[84px] 3xl:leading-[115px] text-center text-white pt-[60px] md:pt-[140px] lg:pt-[40px] 2xl:pt-[90px]">
+                        class="text-3xl leading-[45px] tracking-[2px] md:leading-[64px] md:text-5xl lg:leading-[90px] 2xl:text-[75px] 2xl:leading-[75px] 3xl:text-[84px] 3xl:leading-[115px] text-center text-white pt-[60px] md:pt-[140px] lg:pt-[40px] 2xl:pt-[90px]">
                         אנחנו יוזמים<span class="gr-blue-text">,</span> אוצרים ומפיקים <span class="gr-blue-text">כנסים
                             ממוקדי-תוכן</span> לקהל מקצועי ומנוסה<span class="gr-blue-text">.</span>
                     </h1>
@@ -274,7 +274,7 @@
                     הכנס שלנו לניהול מוצר SaaS, מפגיש product managers למפגש אינטנסיבי של העשרה הדדית ונטוורקינג.
                 </p>
                 <div
-                    class="link-wrapper pt-7 text-center ltr:md:text-left rtl:md:text-right xl:opacity-0 group-hover:xl:opacity-100 transition ease-in-out duration-800">
+                    class="pt-7 text-center ltr:md:text-left rtl:md:text-right xl:opacity-0 group-hover:xl:opacity-100 transition ease-in-out duration-800">
                     <a href=""
                         class="text-white hover:text-blue-500 text-[18px] xl:text-20px  underline transition ease-in-out duration-800">לאתר
                         הכנס</a>
@@ -359,7 +359,9 @@
                         <!-- Mobile bg overlay -->
                         <div class="block md:hidden bg-dark-500-overlay absolute inset-0"></div>
                         <!-- default image -->
-                        <img src="./images/dafkesher-site-bw.png" alt="" class="rounded-t-20px">
+                        <img src="./images/dafkesher-site-bw.png" alt="" class="hidden md:block rounded-t-20px">
+                        <!-- Mobile image -->
+                        <img src="./images/dafkesher-site-cl-mob.png" alt="" class="block md:hidden rounded-t-20px">
                     </div>
                     <!-- hover image -->
                     <div
@@ -384,11 +386,11 @@
                 </div>
                 <!-- floating shape -->
                 <div
-                    class="hidden xl:block absolute rtl:-left-20 ltr:-right-20 bottom-[-100px] z-[1] opacity-0 group-hover:opacity-100 transition ease-in-out duration-800">
+                    class="absolute rtl:-left-6 rtl:md:-left-20 ltr:-right-6 ltr:md:-right-20 -bottom-16 md:bottom-[-100px] z-[1] opacity-100 md:opacity-0 group-hover:opacity-100 transition ease-in-out duration-800">
                     <!-- ltr image -->
-                    <img class="ltr:block rtl:hidden" src="./images/floating-shape.png" alt="">
+                    <img class="ltr:block rtl:hidden absolute rtl:-left-6 rtl:md:-left-20 ltr:-right-6 ltr:md:-right-20 -bottom-16 md:bottom-[-100px] z-[1] opacity-100 md:opacity-0 group-hover:opacity-100 transition ease-in-out duration-800" src="./images/floating-shape.png" alt="">
                     <!-- rtl image -->
-                    <img class="ltr:hidden rtl:block" src="./images/floating-shape-left.png" alt="">
+                    <img class="ltr:hidden rtl:block max-h-[140px] md:max-h-none" src="./images/floating-shape-left.png" alt="">
                 </div>
             </div>
 
@@ -400,7 +402,9 @@
                         <!-- Mobile bg overlay -->
                         <div class="block md:hidden bg-dark-500-overlay absolute inset-0"></div>
                         <!-- default image -->
-                        <img src="./images/salary-survey-bw.png" alt="" class="rounded-t-20px">
+                        <img src="./images/salary-survey-bw.png" alt="" class="hidden md:block rounded-t-20px">
+                        <!-- Mobile image -->
+                        <img src="./images/salary-survey-cl-mob.png" alt="" class="block md:hidden rounded-t-20px">
                     </div>
                     <!-- hover image -->
                     <div
@@ -420,7 +424,7 @@
                     <p class="ltr:text-left rtl:text-right text-sm md:text-base pb-5">כשירות לקהילות של הכנסים שלנו,
                         אנחנו מבצעים מדי שנה סקר שכר ותעריפים מעמיק שמסייע לעובדים ולעובדות, כמו גם למנהלים ולמנהלות,
                         להגיע לשיחות שכר מוכנים ומדוייקים יותר.</p>
-                    <div class="flex flex-col space-y-2 2xl:space-y-0 2xl:grid grid-cols-2">
+                    <div class="flex flex-col space-y-2 2xl:space-y-0 2xl:grid grid-cols-2 max-w-[450px]">
                         <a href="#"
                             class="text-sm md:text-base underline ltr:text-left rtl:text-right mr-0 md:ltr:mr-6 md:rtl:ml-6 hover:text-blue-500 transition duration-800 ease-in-out">לסקר
                             שכר ניהול מוצר</a>
@@ -431,11 +435,11 @@
                 </div>
                 <!-- floating shape -->
                 <div
-                    class="hidden xl:block absolute rtl:-left-[140px] ltr:-right-[140px] -bottom-5 z-[1] opacity-0 group-hover:opacity-100 transition ease-in-out duration-800">
+                    class="block absolute rtl:left-[-36px] rtl:md:-left-[140px] ltr:-right-[140px] -bottom-8 md:-bottom-10 z-[1] opacity-100 md:opacity-0 group-hover:opacity-100 transition ease-in-out duration-800">
                     <!-- ltr image -->
                     <img class="ltr:block rtl:hidden" src="./images/floating-shape-2.png" alt="">
                     <!-- rtl image -->
-                    <img class="ltr:hidden rtl:block" src="./images/floating-left-shape-2.png" alt="">
+                    <img class="ltr:hidden rtl:block max-h-[100px] md:max-h-none" src="./images/floating-left-shape-2.png" alt="">
                 </div>
             </div>
         </div>
@@ -524,13 +528,13 @@
                     </a>
                 </div>
                 <p
-                    class="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 text-blue-900 text-[10px] sm:text-xs md:text-base text-left md:text-center max-w-[187px] sm:max-w-none ml-3">
+                    class="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 text-blue-900 text-[10px] sm:text-xs md:text-base rtl:text-right ltr:text-left md:text-center max-w-[187px] sm:max-w-none ml-3">
                     © 2010-2023 כל הזכויות שמורות לדנין טכנולוגיות</p>
             </div>
         </div>
 
-        <div
-            class="hidden lg:block group fixed bottom-8 right-8 z-[2] bg-blue-primary rounded-full max-h-[150px] max-w-[150px]">
+        <div id="conference-popup-wrapper"
+            class="hidden lg:block group fixed bottom-8 right-8 z-[2] bg-blue-primary rounded-full max-h-[150px] max-w-[150px] transition ease-in-out opacity-100">
             <button id="conference-popup-button" class="relative">
                 <img class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 z-[1]" src="./images/Union.png"
                     alt="">
